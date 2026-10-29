@@ -1,0 +1,24 @@
+{
+  "description": "Secondary diagnostic using original IT source test, previously inspected and transductively used for deduplication. No threshold/model tuning or independence claim. EOL has only two unique texts, so row counts are not independent unknown cases.",
+  "known": {
+    "rows": 599,
+    "flagged_rows": 3,
+    "exact_unique": 551,
+    "flagged_exact_unique": 3
+  },
+  "eol": {
+    "rows": 58,
+    "flagged_rows": 1,
+    "exact_unique": 2,
+    "flagged_exact_unique": 1
+  },
+  "known_topic_correct_rows": 453,
+  "selection_sha256": "4a9de91bd2b1e8389ff6de5f9ae43d590e91538b6e2f1cea3acc9b909387f037",
+  "historical_test_sha256": "336f09088802dcd68538e23895e1619d936b14fc342834fb7b124173ef4bb67c",
+  "limitations": [
+    "EOL unseen after removing overlap with test; two unique texts are not representative unknown requests.",
+    "Previously inspected, not an untouched evaluation.",
+    "Test texts were used without labels during grouping.",
+    "No organization/author independence or OOD production validity established."
+  ]
+}

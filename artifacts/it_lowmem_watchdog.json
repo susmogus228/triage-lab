@@ -1,0 +1,6 @@
+{
+  "status": "watchdog_stopped",
+  "available_mib": 654,
+  "limit_mib": 700,
+  "note": "Process stopped; inspect completed checkpoints and report."
+}

@@ -1,0 +1,73 @@
+{
+  "source": "https://zenodo.org/records/7648117",
+  "doi": "10.5281/zenodo.7648117",
+  "source_license": "CC-BY-4.0",
+  "source_md5": {
+    "X_train.csv": "0a79f0c2f95fcdb407f24b2c0ad7f7d1",
+    "X_test.csv": "02328c4e09a78a41acb22ce17e6e0312",
+    "y_train.csv": "90876921486a26a67bc1976da87305d9",
+    "y_test.csv": "2f054c0e3d8cbbbd76adf30d13a7710a"
+  },
+  "source_counts": {
+    "train": 1572,
+    "test": 657
+  },
+  "split_method": "Original source test retained. Exact and near-duplicate components defined before splits using unlabeled normalized text and char TF-IDF cosine >=0.95; exclude train components touching test; remove conflicting exact-label training groups; deduplicate exact training groups; StratifiedGroupKFold 5, shuffle seed 42, fold 1 train/dev.",
+  "near_similarity_threshold": 0.95,
+  "seed": 42,
+  "near_components_total": 1433,
+  "test_near_components": 535,
+  "source_train_rows_in_test_components": 133,
+  "source_train_conflicting_exact_groups": 1,
+  "source_train_unique_after_purge": 905,
+  "counts": {
+    "train": 724,
+    "dev": 181,
+    "test": 657
+  },
+  "group_counts": {
+    "train": 719,
+    "dev": 179,
+    "test": 535
+  },
+  "class_counts": {
+    "train": {
+      "Active Directory": 62,
+      "Computer-Services": 52,
+      "Fileservice": 152,
+      "O365": 98,
+      "Software": 103,
+      "Support general": 257
+    },
+    "dev": {
+      "Active Directory": 16,
+      "Computer-Services": 13,
+      "Fileservice": 37,
+      "O365": 25,
+      "Software": 25,
+      "Support general": 65
+    },
+    "test": {
+      "Active Directory": 49,
+      "Computer-Services": 41,
+      "EOL": 58,
+      "Fileservice": 138,
+      "O365": 92,
+      "Software": 58,
+      "Support general": 221
+    }
+  },
+  "output_sha256": {
+    "train": "c7b6ca4c25a9c2e55c9f92b0f8c43fd014fd1c871c4d1a1b169186a372d1c9f7",
+    "dev": "be8972ce96d0ced7c671bd5f98a09250aa74ed16a4e962ca579ecc60cf6970b6",
+    "test": "336f09088802dcd68538e23895e1619d936b14fc342834fb7b124173ef4bb67c"
+  },
+  "privacy": "Author reports de-identification; automated pattern checks are not proof of zero PII. Keep raw text local.",
+  "limitations": [
+    "Pre-declared unlabeled near-duplicate grouping fitted on all text including test; it is used only to construct conservative splits, never as model input representation.",
+    "Cosine threshold 0.95 detects only very similar surface forms, not all semantic or templated overlap.",
+    "Source dates, organizations, speakers, and language labels are not included; cannot establish chronological, client, or linguistic generalization.",
+    "Test includes exact duplicate source rows; report both row-weighted and unique-exact-group metrics.",
+    "No independent human validation of labels or anonymization was performed."
+  ]
+}

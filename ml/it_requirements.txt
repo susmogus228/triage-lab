@@ -1,0 +1,3 @@
+# Optional local dependencies for the IT experiment; install CPU Torch from its official index.
+transformers==4.57.3
+safetensors==0.8.0

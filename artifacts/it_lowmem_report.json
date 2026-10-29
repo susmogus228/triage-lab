@@ -1,0 +1,20 @@
+{
+  "status": "stopped_by_watchdog",
+  "protocol": "192-token MiniLM, last encoder layer + head, streamed batch 1, weighted gradient accumulation 4; no historical test",
+  "watchdog": {
+    "status": "watchdog_stopped",
+    "available_mib": 654,
+    "limit_mib": 700,
+    "note": "Process stopped; inspect completed checkpoints and report."
+  },
+  "epochs": [],
+  "selected_checkpoint": null,
+  "baseline_dev_macro_f1": 0.7161779001767451,
+  "limitations": [
+    "No epoch completed; no dev score or new model was produced.",
+    "A low-memory guard cannot reserve memory or prevent a transient drop between monitoring checks.",
+    "The previously used development split is not an independent final benchmark.",
+    "Unknown request detection was not addressed."
+  ],
+  "note": "Reported after the child process exited and no checkpoints were found; user processes were not closed."
+}

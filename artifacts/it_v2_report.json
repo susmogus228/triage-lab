@@ -1,0 +1,282 @@
+{
+  "available": true,
+  "dataset": {
+    "name": "Blind independently authored AI-synthetic IT/OOD diagnostic",
+    "provenance": "AI-authored synthetic; single annotator, taxonomy ambiguities remain; not real customer tickets",
+    "known_dev_n": 181,
+    "unknown_dev_n": 420,
+    "external_known_n": 60,
+    "external_unknown_n": 30,
+    "external_ambiguous_n": 10,
+    "blind_sha256": "01ce1d6aa441b25abc282c61ac51d95d0fc9d3be85403249de14741d7c2c4a92"
+  },
+  "baseline": {
+    "total": 100,
+    "known_n": 60,
+    "unknown_n": 30,
+    "ambiguous_n": 10,
+    "known_accuracy": 0.5833333333333334,
+    "known_macro_f1": 0.5601107226107226,
+    "known_rejected": 60,
+    "known_reject_rate": 1.0,
+    "unknown_detected": 30,
+    "unknown_recall": 1.0,
+    "ambiguous_detected": 10,
+    "ambiguous_recall": 1.0,
+    "unsafe_count": 0,
+    "coverage": 0.0,
+    "known_confusion_matrix": [
+      [
+        9,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        5,
+        0,
+        1,
+        4
+      ],
+      [
+        1,
+        0,
+        0,
+        8,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        7,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        2,
+        0,
+        5
+      ]
+    ],
+    "labels": [
+      "Active Directory",
+      "Computer-Services",
+      "Fileservice",
+      "O365",
+      "Software",
+      "Support general"
+    ],
+    "name": "Current IT TF-IDF; all review",
+    "kind": "baseline"
+  },
+  "candidate": {
+    "total": 100,
+    "known_n": 60,
+    "unknown_n": 30,
+    "ambiguous_n": 10,
+    "known_accuracy": 0.5833333333333334,
+    "known_macro_f1": 0.5601107226107226,
+    "known_rejected": 23,
+    "known_reject_rate": 0.38333333333333336,
+    "unknown_detected": 28,
+    "unknown_recall": 0.9333333333333333,
+    "ambiguous_detected": 8,
+    "ambiguous_recall": 0.8,
+    "unsafe_count": 17,
+    "coverage": 0.41,
+    "known_confusion_matrix": [
+      [
+        9,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        5,
+        0,
+        1,
+        4
+      ],
+      [
+        1,
+        0,
+        0,
+        8,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        7,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        2,
+        0,
+        5
+      ]
+    ],
+    "labels": [
+      "Active Directory",
+      "Computer-Services",
+      "Fileservice",
+      "O365",
+      "Software",
+      "Support general"
+    ],
+    "name": "Candidate IT TF-IDF + proxy OOD detector",
+    "kind": "candidate"
+  },
+  "selection": {
+    "chosen_model": "balanced",
+    "ood_policy": "binary",
+    "threshold": 0.54256127035345,
+    "sha256": "4a9de91bd2b1e8389ff6de5f9ae43d590e91538b6e2f1cea3acc9b909387f037",
+    "development": {
+      "known_n": 181,
+      "unknown_n": 420,
+      "clinc_train_n": 2100
+    },
+    "neural_192": {
+      "status": "not_completed",
+      "reason": "Stopped during model loading to avoid exhausting RAM; no score or candidate produced."
+    }
+  },
+  "development": {
+    "models": {
+      "balanced": {
+        "cv_macro_f1": [
+          0.7473956868260666,
+          0.6644213916619742,
+          0.7228682291704717
+        ],
+        "dev_accuracy": 0.7182320441988951,
+        "dev_macro_f1": 0.7161779001767451
+      },
+      "regularized": {
+        "cv_macro_f1": [
+          0.7117297409268213,
+          0.5865195859828459,
+          0.6906749122371184
+        ],
+        "dev_accuracy": 0.6353591160220995,
+        "dev_macro_f1": 0.6447719184292074
+      },
+      "unweighted": {
+        "cv_macro_f1": [
+          0.6837614670850799,
+          0.5820908985606984,
+          0.6529904519384534
+        ],
+        "dev_accuracy": 0.6961325966850829,
+        "dev_macro_f1": 0.6470864188122123
+      },
+      "stronger": {
+        "cv_macro_f1": [
+          0.7373049666717649,
+          0.6807959388146525,
+          0.7277880024172219
+        ],
+        "dev_accuracy": 0.7292817679558011,
+        "dev_macro_f1": 0.7145991075983708
+      },
+      "strongest": {
+        "cv_macro_f1": [
+          0.7529137423163611,
+          0.6711450835825543,
+          0.7242809678678673
+        ],
+        "dev_accuracy": 0.7292817679558011,
+        "dev_macro_f1": 0.7120262625148501
+      }
+    },
+    "ood_policy": {
+      "name": "binary",
+      "threshold": 0.54256127035345,
+      "known_n": 181,
+      "unknown_n": 420,
+      "known_rejected": 4,
+      "unknown_detected": 420,
+      "known_reject_rate": 0.022099447513812154,
+      "unknown_recall": 1.0,
+      "coverage": 0.2945091514143095
+    },
+    "candidates": {
+      "confidence": {
+        "threshold": 0.6088890940876279,
+        "known_n": 181,
+        "unknown_n": 420,
+        "known_rejected": 66,
+        "unknown_detected": 411,
+        "known_reject_rate": 0.36464088397790057,
+        "unknown_recall": 0.9785714285714285,
+        "coverage": 0.20632279534109818
+      },
+      "binary": {
+        "threshold": 0.54256127035345,
+        "known_n": 181,
+        "unknown_n": 420,
+        "known_rejected": 4,
+        "unknown_detected": 420,
+        "known_reject_rate": 0.022099447513812154,
+        "unknown_recall": 1.0,
+        "coverage": 0.2945091514143095
+      }
+    }
+  },
+  "unlabelled_external": {
+    "count": 80,
+    "review_flagged": 48,
+    "flag_rate": 0.6,
+    "baseline_review_flagged": 80,
+    "source": "https://huggingface.co/datasets/tasksource/help-desk-tickets",
+    "source_revision": "d08adc88a5d39b938da00dc837ac613d9be02153",
+    "warning": "Unlabelled external sample: flag frequency is not OOD recall, precision, or accuracy. Source labels are not mapped to this task; masking is not independently verified."
+  },
+  "active": false,
+  "limitations": [
+    "CLINC unrelated intents are limited proxy OOD, not verified real IT out-of-scope.",
+    "Maximum 40% known rejection on dev is an experimental gate, not production guarantee.",
+    "Old IT test previously viewed and not used for selection.",
+    "Demographic fairness not evaluated.",
+    "Blind sample created by one AI author, not an independent real-user benchmark.",
+    "External Mendeley sample is unlabelled for the target taxonomy; flag count alone is not evidence of quality.",
+    "Training source is one organisation, duplicates/near-duplicates and future shifts remain.",
+    "Previous IT test was already viewed and was not reused for tuning."
+  ]
+}

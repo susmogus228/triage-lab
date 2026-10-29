@@ -1,0 +1,18 @@
+{
+  "status": "unavailable_memory",
+  "protocol": "192-token MiniLM; last encoder layer + classification head; 6 epochs max; choose checkpoint by previously used dev macro F1; historical and external test never read",
+  "available_at_start_mib": 1162,
+  "minimum_start_mib": 1600,
+  "minimum_running_mib": 700,
+  "baseline_dev_macro_f1": 0.7161779001767451,
+  "epochs": [],
+  "selected_checkpoint": null,
+  "limitations": [
+    "Prior IT dev was used repeatedly for model selection and is not independent.",
+    "No comparison on a new independent final test.",
+    "Unknown request detection is a separate task and is not evaluated in this experiment.",
+    "One organisation dataset with 6 known categories; language and demographic fairness not validated."
+  ],
+  "reason": "Available physical memory 1162 MiB, required 1600 MiB",
+  "available_at_end_mib": 1162
+}

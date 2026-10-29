@@ -1,0 +1,284 @@
+{
+  "model_version": "bitext-tfidf-logreg-v1",
+  "dataset": {
+    "name": "Bitext Customer Support LLM Chatbot Training Dataset",
+    "url": "https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset",
+    "revision": "430d1a89bd93bd1fa23c16f29dd53e73f0087443",
+    "license": "CDLA-Sharing-1.0",
+    "nature": "hybrid synthetic",
+    "sha256": "6f81102b0100b97b8468eb04368033a23206bf1fde9d53500d5806ec1001a434",
+    "raw_rows": 26872,
+    "unique_usable_rows": 24014,
+    "duplicate_rows": 2858,
+    "conflicting_groups": 0
+  },
+  "split": {
+    "method": "stratified group folds by normalized exact text, seed 42",
+    "train": 14408,
+    "validation": 4802,
+    "test": 4804,
+    "note": "Similar templates may still cross splits; this is not independent real-world validation."
+  },
+  "threshold": {
+    "value": 0.3,
+    "selection": "first validation score threshold meeting >=90% accepted accuracy and >=20% coverage",
+    "validation_coverage": 0.9979175343606831
+  },
+  "test": {
+    "accuracy": 0.9966694421315571,
+    "macro_f1": 0.9967225742750222,
+    "coverage": 0.9972939217318901,
+    "accepted_accuracy": 0.9977040283865581,
+    "accepted_rule": "score at or above threshold AND at least one known non-stopword",
+    "class_order": [
+      "ACCOUNT",
+      "CANCEL",
+      "CONTACT",
+      "DELIVERY",
+      "FEEDBACK",
+      "INVOICE",
+      "ORDER",
+      "PAYMENT",
+      "REFUND",
+      "SHIPPING",
+      "SUBSCRIPTION"
+    ],
+    "confusion_matrix": [
+      [
+        1025,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        189,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        394,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        325,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        397,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        360,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        607,
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        4,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        392,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        513,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        388,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        198
+      ]
+    ],
+    "classification_report": {
+      "ACCOUNT": {
+        "precision": 0.9922555663117134,
+        "recall": 1.0,
+        "f1-score": 0.9961127308066083,
+        "support": 1025.0
+      },
+      "CANCEL": {
+        "precision": 0.9895287958115183,
+        "recall": 1.0,
+        "f1-score": 0.9947368421052631,
+        "support": 189.0
+      },
+      "CONTACT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 394.0
+      },
+      "DELIVERY": {
+        "precision": 0.9938837920489296,
+        "recall": 1.0,
+        "f1-score": 0.9969325153374233,
+        "support": 325.0
+      },
+      "FEEDBACK": {
+        "precision": 1.0,
+        "recall": 0.9974874371859297,
+        "f1-score": 0.9987421383647799,
+        "support": 398.0
+      },
+      "INVOICE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 360.0
+      },
+      "ORDER": {
+        "precision": 1.0,
+        "recall": 0.9918300653594772,
+        "f1-score": 0.9958982772764561,
+        "support": 612.0
+      },
+      "PAYMENT": {
+        "precision": 1.0,
+        "recall": 0.9874055415617129,
+        "f1-score": 0.9936628643852978,
+        "support": 397.0
+      },
+      "REFUND": {
+        "precision": 1.0,
+        "recall": 0.996116504854369,
+        "f1-score": 0.9980544747081712,
+        "support": 515.0
+      },
+      "SHIPPING": {
+        "precision": 0.9897959183673469,
+        "recall": 0.9948717948717949,
+        "f1-score": 0.9923273657289002,
+        "support": 390.0
+      },
+      "SUBSCRIPTION": {
+        "precision": 1.0,
+        "recall": 0.9949748743718593,
+        "f1-score": 0.9974811083123426,
+        "support": 199.0
+      },
+      "accuracy": 0.9966694421315571,
+      "macro avg": {
+        "precision": 0.9968603702308645,
+        "recall": 0.9966078380186493,
+        "f1-score": 0.9967225742750222,
+        "support": 4804.0
+      },
+      "weighted avg": {
+        "precision": 0.9966934926013845,
+        "recall": 0.9966694421315571,
+        "f1-score": 0.996669779622357,
+        "support": 4804.0
+      }
+    }
+  },
+  "notes": [
+    "English synthetic data; no evaluation on real customer messages.",
+    "Scores are uncalibrated model probabilities; not guarantees of correctness.",
+    "Unknown topics may receive high scores; send uncertain predictions for manual review.",
+    "No urgency classifier; reviewer corrections do not automatically retrain this model."
+  ],
+  "versions": {
+    "sklearn": "1.9.1",
+    "numpy": "2.4.6"
+  },
+  "created_utc": "2026-10-29T09:17:33.262041+00:00"
+}

@@ -1,0 +1,43 @@
+.venv/
+__pycache__/
+*.py[cod]
+work/
+frontend/node_modules/
+frontend/dist/
+data/bitext.csv
+# Keep all generated or source-derived datasets local. Documentation and
+# preparation scripts remain available for reproducing the experiments.
+data/*.json
+data/*.jsonl
+artifacts/*.joblib
+
+# Generated source-derived data; review license obligations before redistribution.
+data/evolution_fit.jsonl
+data/evolution_feedback.jsonl
+data/evolution_clinc_full.json
+
+# Local real-ticket data and diagnostics: do not publish source texts.
+data/it_support_raw/
+data/it_support_prepared/
+data/it_support_langdeps/
+
+# Local fine-tuning artifacts and pretrained-model cache.
+artifacts/it_*.pt
+artifacts/it_*.safetensors
+work/it_hf_cache/
+
+# Local external support tickets and diagnostic models; may contain sensitive data.
+data/it_v2_external/
+artifacts/it_v2*.pt
+artifacts/it_v2*.safetensors
+
+# Local databases, environment secrets and trained model files.
+*.db
+*.sqlite
+*.sqlite3
+.env
+.env.*
+!.env.example
+artifacts/*.pkl
+artifacts/*.pickle
+artifacts/*.onnx

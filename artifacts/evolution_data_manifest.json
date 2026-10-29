@@ -1,0 +1,58 @@
+{
+  "kind": "source-ID-partition before synthetic generation",
+  "seed": 97831,
+  "bitext_training_sources": 14408,
+  "fit_sources": 11521,
+  "feedback_sources": 2887,
+  "counts": {
+    "fit": 37680,
+    "feedback": 8420,
+    "dev": 120
+  },
+  "fit_kinds": {
+    "single": 9000,
+    "same_category_composite": 9000,
+    "distinct_category_composite": 18000,
+    "clinc_unrelated": 1680
+  },
+  "feedback_kinds": {
+    "single": 2000,
+    "same_category_composite": 2000,
+    "distinct_category_composite": 4000,
+    "clinc_unrelated": 420
+  },
+  "bitext_sha256": "6f81102b0100b97b8468eb04368033a23206bf1fde9d53500d5806ec1001a434",
+  "clinc_sha256": "36923c3705a59e08fe9c3883d8bc2dd966ef93e22cb78ac41171782a698d56e0",
+  "fit_sha256": "6e4d1b6adab222916b49f9559f55e59c0fbe808b71b85df285e99f4620238c5f",
+  "feedback_sha256": "b3ffe463985f4dacd6fc78d62c23770578d91f751daee8f9101c36120a424846",
+  "dev_sha256": "266dc1d0a554cb4116631ad1b98ae658dff46a2d0896d50c213c9b5f05692672",
+  "clinc_revision": "828f809",
+  "clinc_train_intent_allowlist": [
+    "calories",
+    "cook_time",
+    "flip_coin",
+    "gas_type",
+    "ingredient_substitution",
+    "meaning_of_life",
+    "next_holiday",
+    "next_song",
+    "nutrition_info",
+    "oil_change_how",
+    "play_music",
+    "recipe",
+    "roll_dice",
+    "tell_joke",
+    "timezone",
+    "tire_pressure",
+    "traffic",
+    "travel_suggestion",
+    "vaccines",
+    "weather",
+    "what_song"
+  ],
+  "limitations": [
+    "Distinct broad-category composites do not prove recognition of multiple intents within one category.",
+    "Synthetic template overlap and annotation ambiguity remain; CLINC crowd prompts are not real customer tickets.",
+    "Only exact normalised duplicates/source IDs are controlled; semantic similarity can remain."
+  ]
+}

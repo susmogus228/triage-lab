@@ -1,0 +1,133 @@
+{
+  "description": "Post-hoc sensitivity using a blind label audit made before predictions. Original dataset and selection remain unchanged. The alternatives are judgment calls, not independently established ground truth.",
+  "alternatives": {
+    "EH032": "REVIEW",
+    "EH034": "REVIEW",
+    "EH035": "REVIEW",
+    "EH048": "REVIEW",
+    "EH064": "REVIEW",
+    "EH070": "CONTACT"
+  },
+  "results": {
+    "baseline": {
+      "original": {
+        "count": 126,
+        "known_n": 66,
+        "known_correct": 52,
+        "known_accuracy": 0.7878787878787878,
+        "review_n": 60,
+        "review_found": 45,
+        "review_recall": 0.75,
+        "unflagged_n": 38,
+        "coverage": 0.30158730158730157,
+        "unsafe_count": 17,
+        "known_flagged_n": 43,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 4,
+            "flagged": 4
+          },
+          "multi-intent": {
+            "total": 30,
+            "flagged": 16
+          },
+          "out-of-scope": {
+            "total": 26,
+            "flagged": 25
+          }
+        }
+      },
+      "alternative": {
+        "count": 126,
+        "known_n": 62,
+        "known_correct": 49,
+        "known_accuracy": 0.7903225806451613,
+        "review_n": 64,
+        "review_found": 49,
+        "review_recall": 0.765625,
+        "unflagged_n": 38,
+        "coverage": 0.30158730158730157,
+        "unsafe_count": 17,
+        "known_flagged_n": 39,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 4,
+            "flagged": 4
+          },
+          "multi-intent": {
+            "total": 29,
+            "flagged": 16
+          },
+          "out-of-scope": {
+            "total": 26,
+            "flagged": 25
+          },
+          "single-intent": {
+            "total": 5,
+            "flagged": 4
+          }
+        }
+      }
+    },
+    "selected": {
+      "original": {
+        "count": 126,
+        "known_n": 66,
+        "known_correct": 52,
+        "known_accuracy": 0.7878787878787878,
+        "review_n": 60,
+        "review_found": 51,
+        "review_recall": 0.85,
+        "unflagged_n": 24,
+        "coverage": 0.19047619047619047,
+        "unsafe_count": 10,
+        "known_flagged_n": 51,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 4,
+            "flagged": 4
+          },
+          "multi-intent": {
+            "total": 30,
+            "flagged": 22
+          },
+          "out-of-scope": {
+            "total": 26,
+            "flagged": 25
+          }
+        }
+      },
+      "alternative": {
+        "count": 126,
+        "known_n": 62,
+        "known_correct": 49,
+        "known_accuracy": 0.7903225806451613,
+        "review_n": 64,
+        "review_found": 54,
+        "review_recall": 0.84375,
+        "unflagged_n": 24,
+        "coverage": 0.19047619047619047,
+        "unsafe_count": 11,
+        "known_flagged_n": 48,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 4,
+            "flagged": 4
+          },
+          "multi-intent": {
+            "total": 29,
+            "flagged": 21
+          },
+          "out-of-scope": {
+            "total": 26,
+            "flagged": 25
+          },
+          "single-intent": {
+            "total": 5,
+            "flagged": 4
+          }
+        }
+      }
+    }
+  }
+}

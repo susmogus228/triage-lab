@@ -1,0 +1,3759 @@
+{
+  "available": true,
+  "dataset": {
+    "description": "Independent AI-authored synthetic holdout, not customer submissions",
+    "count": 126,
+    "sha256": "de368f082d8af5fd15c2187f052497196d6abbeb677bb0a016e026aceb29f457"
+  },
+  "selection": {
+    "protocol": "G1 source-ID fit; G2 retrained from scratch using fit + disjoint feedback and weight 3 for feedback prediction errors; dev only selects threshold/generation; holdout not read",
+    "selected": "g1",
+    "threshold": 0.85,
+    "dev_baseline": {
+      "count": 120,
+      "known_n": 88,
+      "known_correct": 63,
+      "known_accuracy": 0.7159090909090909,
+      "review_n": 32,
+      "review_found": 21,
+      "review_recall": 0.65625,
+      "unflagged_n": 49,
+      "coverage": 0.4083333333333333,
+      "unsafe_count": 13,
+      "known_flagged_n": 50,
+      "scenario_counts": {
+        "ambiguous": {
+          "total": 3,
+          "flagged": 3
+        },
+        "multi-intent": {
+          "total": 4,
+          "flagged": 1
+        },
+        "multi_intent": {
+          "total": 8,
+          "flagged": 3
+        },
+        "out_of_scope": {
+          "total": 8,
+          "flagged": 6
+        },
+        "unknown": {
+          "total": 9,
+          "flagged": 8
+        }
+      }
+    },
+    "dev_candidates": [
+      {
+        "name": "g1",
+        "threshold": 0.25,
+        "count": 120,
+        "known_n": 88,
+        "known_correct": 63,
+        "known_accuracy": 0.7159090909090909,
+        "review_n": 32,
+        "review_found": 32,
+        "review_recall": 1.0,
+        "unflagged_n": 7,
+        "coverage": 0.058333333333333334,
+        "unsafe_count": 0,
+        "known_flagged_n": 81,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 3,
+            "flagged": 3
+          },
+          "multi-intent": {
+            "total": 4,
+            "flagged": 4
+          },
+          "multi_intent": {
+            "total": 8,
+            "flagged": 8
+          },
+          "out_of_scope": {
+            "total": 8,
+            "flagged": 8
+          },
+          "unknown": {
+            "total": 9,
+            "flagged": 9
+          }
+        }
+      },
+      {
+        "name": "g1",
+        "threshold": 0.35,
+        "count": 120,
+        "known_n": 88,
+        "known_correct": 63,
+        "known_accuracy": 0.7159090909090909,
+        "review_n": 32,
+        "review_found": 31,
+        "review_recall": 0.96875,
+        "unflagged_n": 12,
+        "coverage": 0.1,
+        "unsafe_count": 1,
+        "known_flagged_n": 77,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 3,
+            "flagged": 3
+          },
+          "multi-intent": {
+            "total": 4,
+            "flagged": 4
+          },
+          "multi_intent": {
+            "total": 8,
+            "flagged": 8
+          },
+          "out_of_scope": {
+            "total": 8,
+            "flagged": 7
+          },
+          "unknown": {
+            "total": 9,
+            "flagged": 9
+          }
+        }
+      },
+      {
+        "name": "g1",
+        "threshold": 0.45,
+        "count": 120,
+        "known_n": 88,
+        "known_correct": 63,
+        "known_accuracy": 0.7159090909090909,
+        "review_n": 32,
+        "review_found": 29,
+        "review_recall": 0.90625,
+        "unflagged_n": 17,
+        "coverage": 0.14166666666666666,
+        "unsafe_count": 3,
+        "known_flagged_n": 74,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 3,
+            "flagged": 3
+          },
+          "multi-intent": {
+            "total": 4,
+            "flagged": 4
+          },
+          "multi_intent": {
+            "total": 8,
+            "flagged": 8
+          },
+          "out_of_scope": {
+            "total": 8,
+            "flagged": 6
+          },
+          "unknown": {
+            "total": 9,
+            "flagged": 8
+          }
+        }
+      },
+      {
+        "name": "g1",
+        "threshold": 0.55,
+        "count": 120,
+        "known_n": 88,
+        "known_correct": 63,
+        "known_accuracy": 0.7159090909090909,
+        "review_n": 32,
+        "review_found": 29,
+        "review_recall": 0.90625,
+        "unflagged_n": 19,
+        "coverage": 0.15833333333333333,
+        "unsafe_count": 3,
+        "known_flagged_n": 72,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 3,
+            "flagged": 3
+          },
+          "multi-intent": {
+            "total": 4,
+            "flagged": 4
+          },
+          "multi_intent": {
+            "total": 8,
+            "flagged": 8
+          },
+          "out_of_scope": {
+            "total": 8,
+            "flagged": 6
+          },
+          "unknown": {
+            "total": 9,
+            "flagged": 8
+          }
+        }
+      },
+      {
+        "name": "g1",
+        "threshold": 0.65,
+        "count": 120,
+        "known_n": 88,
+        "known_correct": 63,
+        "known_accuracy": 0.7159090909090909,
+        "review_n": 32,
+        "review_found": 29,
+        "review_recall": 0.90625,
+        "unflagged_n": 24,
+        "coverage": 0.2,
+        "unsafe_count": 3,
+        "known_flagged_n": 67,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 3,
+            "flagged": 3
+          },
+          "multi-intent": {
+            "total": 4,
+            "flagged": 4
+          },
+          "multi_intent": {
+            "total": 8,
+            "flagged": 8
+          },
+          "out_of_scope": {
+            "total": 8,
+            "flagged": 6
+          },
+          "unknown": {
+            "total": 9,
+            "flagged": 8
+          }
+        }
+      },
+      {
+        "name": "g1",
+        "threshold": 0.75,
+        "count": 120,
+        "known_n": 88,
+        "known_correct": 63,
+        "known_accuracy": 0.7159090909090909,
+        "review_n": 32,
+        "review_found": 28,
+        "review_recall": 0.875,
+        "unflagged_n": 29,
+        "coverage": 0.24166666666666667,
+        "unsafe_count": 4,
+        "known_flagged_n": 63,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 3,
+            "flagged": 3
+          },
+          "multi-intent": {
+            "total": 4,
+            "flagged": 4
+          },
+          "multi_intent": {
+            "total": 8,
+            "flagged": 7
+          },
+          "out_of_scope": {
+            "total": 8,
+            "flagged": 6
+          },
+          "unknown": {
+            "total": 9,
+            "flagged": 8
+          }
+        }
+      },
+      {
+        "name": "g1",
+        "threshold": 0.85,
+        "count": 120,
+        "known_n": 88,
+        "known_correct": 63,
+        "known_accuracy": 0.7159090909090909,
+        "review_n": 32,
+        "review_found": 26,
+        "review_recall": 0.8125,
+        "unflagged_n": 38,
+        "coverage": 0.31666666666666665,
+        "unsafe_count": 7,
+        "known_flagged_n": 56,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 3,
+            "flagged": 3
+          },
+          "multi-intent": {
+            "total": 4,
+            "flagged": 3
+          },
+          "multi_intent": {
+            "total": 8,
+            "flagged": 6
+          },
+          "out_of_scope": {
+            "total": 8,
+            "flagged": 6
+          },
+          "unknown": {
+            "total": 9,
+            "flagged": 8
+          }
+        }
+      },
+      {
+        "name": "g1",
+        "threshold": 0.95,
+        "count": 120,
+        "known_n": 88,
+        "known_correct": 63,
+        "known_accuracy": 0.7159090909090909,
+        "review_n": 32,
+        "review_found": 24,
+        "review_recall": 0.75,
+        "unflagged_n": 45,
+        "coverage": 0.375,
+        "unsafe_count": 10,
+        "known_flagged_n": 51,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 3,
+            "flagged": 3
+          },
+          "multi-intent": {
+            "total": 4,
+            "flagged": 1
+          },
+          "multi_intent": {
+            "total": 8,
+            "flagged": 6
+          },
+          "out_of_scope": {
+            "total": 8,
+            "flagged": 6
+          },
+          "unknown": {
+            "total": 9,
+            "flagged": 8
+          }
+        }
+      },
+      {
+        "name": "g2",
+        "threshold": 0.25,
+        "count": 120,
+        "known_n": 88,
+        "known_correct": 63,
+        "known_accuracy": 0.7159090909090909,
+        "review_n": 32,
+        "review_found": 31,
+        "review_recall": 0.96875,
+        "unflagged_n": 8,
+        "coverage": 0.06666666666666667,
+        "unsafe_count": 1,
+        "known_flagged_n": 81,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 3,
+            "flagged": 3
+          },
+          "multi-intent": {
+            "total": 4,
+            "flagged": 4
+          },
+          "multi_intent": {
+            "total": 8,
+            "flagged": 8
+          },
+          "out_of_scope": {
+            "total": 8,
+            "flagged": 7
+          },
+          "unknown": {
+            "total": 9,
+            "flagged": 9
+          }
+        }
+      },
+      {
+        "name": "g2",
+        "threshold": 0.35,
+        "count": 120,
+        "known_n": 88,
+        "known_correct": 63,
+        "known_accuracy": 0.7159090909090909,
+        "review_n": 32,
+        "review_found": 31,
+        "review_recall": 0.96875,
+        "unflagged_n": 11,
+        "coverage": 0.09166666666666666,
+        "unsafe_count": 1,
+        "known_flagged_n": 78,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 3,
+            "flagged": 3
+          },
+          "multi-intent": {
+            "total": 4,
+            "flagged": 4
+          },
+          "multi_intent": {
+            "total": 8,
+            "flagged": 8
+          },
+          "out_of_scope": {
+            "total": 8,
+            "flagged": 7
+          },
+          "unknown": {
+            "total": 9,
+            "flagged": 9
+          }
+        }
+      },
+      {
+        "name": "g2",
+        "threshold": 0.45,
+        "count": 120,
+        "known_n": 88,
+        "known_correct": 63,
+        "known_accuracy": 0.7159090909090909,
+        "review_n": 32,
+        "review_found": 30,
+        "review_recall": 0.9375,
+        "unflagged_n": 16,
+        "coverage": 0.13333333333333333,
+        "unsafe_count": 2,
+        "known_flagged_n": 74,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 3,
+            "flagged": 3
+          },
+          "multi-intent": {
+            "total": 4,
+            "flagged": 4
+          },
+          "multi_intent": {
+            "total": 8,
+            "flagged": 8
+          },
+          "out_of_scope": {
+            "total": 8,
+            "flagged": 7
+          },
+          "unknown": {
+            "total": 9,
+            "flagged": 8
+          }
+        }
+      },
+      {
+        "name": "g2",
+        "threshold": 0.55,
+        "count": 120,
+        "known_n": 88,
+        "known_correct": 63,
+        "known_accuracy": 0.7159090909090909,
+        "review_n": 32,
+        "review_found": 29,
+        "review_recall": 0.90625,
+        "unflagged_n": 19,
+        "coverage": 0.15833333333333333,
+        "unsafe_count": 3,
+        "known_flagged_n": 72,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 3,
+            "flagged": 3
+          },
+          "multi-intent": {
+            "total": 4,
+            "flagged": 4
+          },
+          "multi_intent": {
+            "total": 8,
+            "flagged": 8
+          },
+          "out_of_scope": {
+            "total": 8,
+            "flagged": 6
+          },
+          "unknown": {
+            "total": 9,
+            "flagged": 8
+          }
+        }
+      },
+      {
+        "name": "g2",
+        "threshold": 0.65,
+        "count": 120,
+        "known_n": 88,
+        "known_correct": 63,
+        "known_accuracy": 0.7159090909090909,
+        "review_n": 32,
+        "review_found": 28,
+        "review_recall": 0.875,
+        "unflagged_n": 21,
+        "coverage": 0.175,
+        "unsafe_count": 4,
+        "known_flagged_n": 71,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 3,
+            "flagged": 3
+          },
+          "multi-intent": {
+            "total": 4,
+            "flagged": 4
+          },
+          "multi_intent": {
+            "total": 8,
+            "flagged": 7
+          },
+          "out_of_scope": {
+            "total": 8,
+            "flagged": 6
+          },
+          "unknown": {
+            "total": 9,
+            "flagged": 8
+          }
+        }
+      },
+      {
+        "name": "g2",
+        "threshold": 0.75,
+        "count": 120,
+        "known_n": 88,
+        "known_correct": 63,
+        "known_accuracy": 0.7159090909090909,
+        "review_n": 32,
+        "review_found": 27,
+        "review_recall": 0.84375,
+        "unflagged_n": 28,
+        "coverage": 0.23333333333333334,
+        "unsafe_count": 6,
+        "known_flagged_n": 65,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 3,
+            "flagged": 3
+          },
+          "multi-intent": {
+            "total": 4,
+            "flagged": 3
+          },
+          "multi_intent": {
+            "total": 8,
+            "flagged": 7
+          },
+          "out_of_scope": {
+            "total": 8,
+            "flagged": 6
+          },
+          "unknown": {
+            "total": 9,
+            "flagged": 8
+          }
+        }
+      },
+      {
+        "name": "g2",
+        "threshold": 0.85,
+        "count": 120,
+        "known_n": 88,
+        "known_correct": 63,
+        "known_accuracy": 0.7159090909090909,
+        "review_n": 32,
+        "review_found": 25,
+        "review_recall": 0.78125,
+        "unflagged_n": 37,
+        "coverage": 0.30833333333333335,
+        "unsafe_count": 8,
+        "known_flagged_n": 58,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 3,
+            "flagged": 3
+          },
+          "multi-intent": {
+            "total": 4,
+            "flagged": 2
+          },
+          "multi_intent": {
+            "total": 8,
+            "flagged": 6
+          },
+          "out_of_scope": {
+            "total": 8,
+            "flagged": 6
+          },
+          "unknown": {
+            "total": 9,
+            "flagged": 8
+          }
+        }
+      },
+      {
+        "name": "g2",
+        "threshold": 0.95,
+        "count": 120,
+        "known_n": 88,
+        "known_correct": 63,
+        "known_accuracy": 0.7159090909090909,
+        "review_n": 32,
+        "review_found": 24,
+        "review_recall": 0.75,
+        "unflagged_n": 45,
+        "coverage": 0.375,
+        "unsafe_count": 10,
+        "known_flagged_n": 51,
+        "scenario_counts": {
+          "ambiguous": {
+            "total": 3,
+            "flagged": 3
+          },
+          "multi-intent": {
+            "total": 4,
+            "flagged": 1
+          },
+          "multi_intent": {
+            "total": 8,
+            "flagged": 6
+          },
+          "out_of_scope": {
+            "total": 8,
+            "flagged": 6
+          },
+          "unknown": {
+            "total": 9,
+            "flagged": 8
+          }
+        }
+      }
+    ],
+    "feedback_error_count": 2324,
+    "feedback_total": 8420,
+    "sample_weights": {
+      "fit": 1.0,
+      "feedback_correct": 1.0,
+      "feedback_incorrect": 3.0
+    },
+    "gate": "At least 2 fewer unflagged errors than baseline; coverage >= max(25%, baseline minus 10 percentage points).",
+    "sha256": {
+      "bitext": "6f81102b0100b97b8468eb04368033a23206bf1fde9d53500d5806ec1001a434",
+      "clinc": "36923c3705a59e08fe9c3883d8bc2dd966ef93e22cb78ac41171782a698d56e0",
+      "fit": "6e4d1b6adab222916b49f9559f55e59c0fbe808b71b85df285e99f4620238c5f",
+      "feedback": "b3ffe463985f4dacd6fc78d62c23770578d91f751daee8f9101c36120a424846",
+      "dev": "266dc1d0a554cb4116631ad1b98ae658dff46a2d0896d50c213c9b5f05692672",
+      "baseline": "4a07b680675a5f6f60be405845bcd77795596fb5f63c70c6fe41c787b2722404",
+      "g1": "f3f51511ad5a9f6b072e420586e3bd7f0a4664f32d155016324cb4a2191596b8",
+      "g2": "d56eca5fb96dafdae19b6c2e10da24d63d089a6e4d2adb79a4a60071effa3f2b"
+    },
+    "created_utc": "2026-10-29T09:37:18.777523+00:00"
+  },
+  "baseline": {
+    "name": "baseline",
+    "metrics": {
+      "count": 126,
+      "known_n": 66,
+      "known_correct": 52,
+      "known_accuracy": 0.7878787878787878,
+      "review_n": 60,
+      "review_found": 45,
+      "review_recall": 0.75,
+      "unflagged_n": 38,
+      "coverage": 0.30158730158730157,
+      "unsafe_count": 17,
+      "known_flagged_n": 43,
+      "scenario_counts": {
+        "ambiguous": {
+          "total": 4,
+          "flagged": 4
+        },
+        "multi-intent": {
+          "total": 30,
+          "flagged": 16
+        },
+        "out-of-scope": {
+          "total": 26,
+          "flagged": 25
+        }
+      }
+    },
+    "cases": [
+      {
+        "id": "EH001",
+        "text": "I replaced my phone and the sign-in authenticator no longer recognizes it. How do I recover access?",
+        "expected": "ACCOUNT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ACCOUNT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.6982333382273587,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH002",
+        "text": "My profile still displays the surname I used before marriage. Could you update it?",
+        "expected": "ACCOUNT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ACCOUNT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.7149092356103834,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH003",
+        "text": "Neither of my passwords works, and I have been locked out since breakfast.",
+        "expected": "ACCOUNT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ACCOUNT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.5878343760657803,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH004",
+        "text": "I accidentally attached my account to an email address with a typo. Can that be changed?",
+        "expected": "ACCOUNT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ACCOUNT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.5621651925266473,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH005",
+        "text": "Is there a way to turn off the extra login code on my personal profile?",
+        "expected": "ACCOUNT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ACCOUNT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.874399085134739,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH006",
+        "text": "The sign in button takes me back to the same screen every time I use Firefox.",
+        "expected": "ACCOUNT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ACCOUNT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.5483205961251516,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH007",
+        "text": "If I terminate the service agreement after four months, what early-exit fee will I owe?",
+        "expected": "CANCEL",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CANCEL under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CANCEL",
+        "confidence": 0.7850158739454166,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH008",
+        "text": "The contract lists a cancellation charge and a final date, but I cannot work out the amount.",
+        "expected": "CANCEL",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CANCEL under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CANCEL",
+        "confidence": 0.8198194821574207,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH009",
+        "text": "How large is the penalty for breaking my twelve-month agreement halfway through?",
+        "expected": "CANCEL",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CANCEL under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CANCEL",
+        "confidence": 0.2466999088047589,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH010",
+        "text": "Will you waive the early termination fee if the contract holder moves overseas?",
+        "expected": "CANCEL",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CANCEL under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CANCEL",
+        "confidence": 0.9589228238589138,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH011",
+        "text": "What is the formula for calculating my contract cancellation penalty?",
+        "expected": "CANCEL",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CANCEL under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CANCEL",
+        "confidence": 0.7161148265092967,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH012",
+        "text": "I have a six-month agreement ending early; tell me whether there is a fee for ending it.",
+        "expected": "CANCEL",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CANCEL under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CANCEL",
+        "confidence": 0.22854657245398272,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH013",
+        "text": "Could someone from your support desk call me so I can explain the problem?",
+        "expected": "CONTACT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CONTACT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.5450429567842607,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH014",
+        "text": "I would rather discuss this with an actual agent instead of the automated assistant.",
+        "expected": "CONTACT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CONTACT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.7547673386327206,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH015",
+        "text": "Please provide a telephone number and opening hours for your customer care team.",
+        "expected": "CONTACT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CONTACT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "FEEDBACK",
+        "confidence": 0.32153312851242427,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH016",
+        "text": "The chatbot keeps looping. Is there a staffed chat service?",
+        "expected": "CONTACT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CONTACT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.4124685622119635,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH017",
+        "text": "How can I reach your company directly by email?",
+        "expected": "CONTACT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CONTACT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "FEEDBACK",
+        "confidence": 0.2983180919423414,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH018",
+        "text": "Can you arrange a conversation with a representative who can help me?",
+        "expected": "CONTACT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CONTACT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.4521947999520814,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH019",
+        "text": "Before ordering, can you tell me whether Sunday delivery is available in rural areas?",
+        "expected": "DELIVERY",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to DELIVERY under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.21304368466684534,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH020",
+        "text": "What delivery choices and estimated transit times do you offer at checkout?",
+        "expected": "DELIVERY",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to DELIVERY under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.5442850301069438,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH021",
+        "text": "Is collection from a local pickup locker one of the available delivery methods?",
+        "expected": "DELIVERY",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to DELIVERY under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.5916528402410446,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH022",
+        "text": "How many business days does standard delivery usually take to reach an island address?",
+        "expected": "DELIVERY",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to DELIVERY under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.4323448693783117,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH023",
+        "text": "Do you offer a faster courier option, or only economy shipping?",
+        "expected": "DELIVERY",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to DELIVERY under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.28756689464244856,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH024",
+        "text": "Please explain the available delivery services for a heavy package.",
+        "expected": "DELIVERY",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to DELIVERY under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.5163429994863075,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH025",
+        "text": "The updated help page is easier to read; thank your design team for the improvement.",
+        "expected": "FEEDBACK",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to FEEDBACK under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.2623617428855548,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH026",
+        "text": "I have a suggestion: make the size guide available before customers reach checkout.",
+        "expected": "FEEDBACK",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to FEEDBACK under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "FEEDBACK",
+        "confidence": 0.2006376076904958,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH027",
+        "text": "Your search results are confusing and the filter labels are difficult to understand.",
+        "expected": "FEEDBACK",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to FEEDBACK under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.15562172235229074,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH028",
+        "text": "I wanted to share that your packaging looks thoughtful and the instructions are clear.",
+        "expected": "FEEDBACK",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to FEEDBACK under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SUBSCRIPTION",
+        "confidence": 0.2231328361062457,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH029",
+        "text": "The contrast of the menu is too low. It would be much easier to use with darker text.",
+        "expected": "FEEDBACK",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to FEEDBACK under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.5273410927238329,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH030",
+        "text": "Please pass on my complaint about the confusing layout of the product gallery.",
+        "expected": "FEEDBACK",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to FEEDBACK under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.709762141790988,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH031",
+        "text": "Our finance office needs a tax invoice with the company registration number.",
+        "expected": "INVOICE",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to INVOICE under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.513400927338111,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH032",
+        "text": "Could you correct the billing name shown on the invoice for my paid purchase?",
+        "expected": "INVOICE",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to INVOICE under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "INVOICE",
+        "confidence": 0.5071565853930534,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH033",
+        "text": "Where can I find a downloadable PDF invoice for last month?",
+        "expected": "INVOICE",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to INVOICE under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "INVOICE",
+        "confidence": 0.5562803947941615,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH034",
+        "text": "The invoice total is fine, but our business address is absent from the document.",
+        "expected": "INVOICE",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to INVOICE under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "INVOICE",
+        "confidence": 0.43731198835759205,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH035",
+        "text": "Can you reissue the invoice in the name of our association?",
+        "expected": "INVOICE",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to INVOICE under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "INVOICE",
+        "confidence": 0.7958126085898504,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH036",
+        "text": "I need an invoice and receipt; where are those documents stored in the portal?",
+        "expected": "INVOICE",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to INVOICE under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "INVOICE",
+        "confidence": 0.4307129603350727,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH037",
+        "text": "I ordered the wrong jacket size this morning; can I change the item before packing?",
+        "expected": "ORDER",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ORDER under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.21906877656097337,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH038",
+        "text": "Please cancel my purchase made an hour ago, before it leaves your warehouse.",
+        "expected": "ORDER",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ORDER under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ORDER",
+        "confidence": 0.4567819960467357,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH039",
+        "text": "The order page contains a tracking link that has not updated. Where is that purchase?",
+        "expected": "ORDER",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ORDER under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ORDER",
+        "confidence": 0.7051846500632476,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH040",
+        "text": "I bought two identical items by mistake. Can you remove one from the order?",
+        "expected": "ORDER",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ORDER under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ORDER",
+        "confidence": 0.45954402978597075,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH041",
+        "text": "Please check whether order 7042 has been dispatched and give me its tracking status.",
+        "expected": "ORDER",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ORDER under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ORDER",
+        "confidence": 0.4100639797715808,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH042",
+        "text": "What items were included in the purchase I placed last Tuesday?",
+        "expected": "ORDER",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ORDER under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ORDER",
+        "confidence": 0.5008267357502497,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH043",
+        "text": "The checkout rejected my debit card even though my bank approved the transaction.",
+        "expected": "PAYMENT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to PAYMENT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.4988889354526333,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH044",
+        "text": "I see two identical charges on my card for a single checkout. Please investigate.",
+        "expected": "PAYMENT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to PAYMENT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.31973204853696835,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH045",
+        "text": "Which payment methods can I use and is a debit card accepted?",
+        "expected": "PAYMENT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to PAYMENT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "PAYMENT",
+        "confidence": 0.8818978184995336,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH046",
+        "text": "At the last payment step the page showed an error and my card was not charged.",
+        "expected": "PAYMENT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to PAYMENT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "PAYMENT",
+        "confidence": 0.5644408520308449,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH047",
+        "text": "The bank says payment succeeded but the store checkout says it failed.",
+        "expected": "PAYMENT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to PAYMENT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "PAYMENT",
+        "confidence": 0.725354172503166,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH048",
+        "text": "How do I replace the saved card used for future payments?",
+        "expected": "PAYMENT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to PAYMENT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "PAYMENT",
+        "confidence": 0.443292920149848,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH049",
+        "text": "My return reached your warehouse two weeks ago; when will the money be reimbursed?",
+        "expected": "REFUND",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to REFUND under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.40830962894405237,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH050",
+        "text": "Please send the purchase amount back to the card I originally used.",
+        "expected": "REFUND",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to REFUND under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.19931626137523678,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH051",
+        "text": "I returned the shoes and received a confirmation, but the refund is still missing.",
+        "expected": "REFUND",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to REFUND under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.7881790395158875,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH052",
+        "text": "I was promised a partial reimbursement for the damaged item. Has it been issued?",
+        "expected": "REFUND",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to REFUND under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.3996873207739494,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH053",
+        "text": "The refund went to an expired card. How will I receive the returned funds?",
+        "expected": "REFUND",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to REFUND under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.5040849956542648,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH054",
+        "text": "Can you explain the expected timing of a refund after you accept a return?",
+        "expected": "REFUND",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to REFUND under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.5636425501346422,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH055",
+        "text": "Please change the destination address on my existing purchase to my new workplace.",
+        "expected": "SHIPPING",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SHIPPING under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.7344639828753551,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH056",
+        "text": "I entered the wrong postcode and street for shipping. Can the address be corrected?",
+        "expected": "SHIPPING",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SHIPPING under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.9387649689761665,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH057",
+        "text": "My package has not been dispatched, so please replace the saved delivery address.",
+        "expected": "SHIPPING",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SHIPPING under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.9192146506714847,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH058",
+        "text": "Can I edit the shipping address after ordering but before the item leaves the warehouse?",
+        "expected": "SHIPPING",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SHIPPING under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.9135242092292319,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH059",
+        "text": "The recipient address has an apartment number missing. Please update it.",
+        "expected": "SHIPPING",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SHIPPING under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.8437108319696938,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH060",
+        "text": "I moved house yesterday and need to amend the address for an unshipped order.",
+        "expected": "SHIPPING",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SHIPPING under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.8169872355497924,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH061",
+        "text": "Please remove my address from the promotional mailing list.",
+        "expected": "SUBSCRIPTION",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SUBSCRIPTION under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.7951486076223232,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH062",
+        "text": "I never signed up for your newsletter. Stop the weekly marketing emails.",
+        "expected": "SUBSCRIPTION",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SUBSCRIPTION under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SUBSCRIPTION",
+        "confidence": 0.5700745891012102,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH063",
+        "text": "How can I subscribe to the product-news email bulletin?",
+        "expected": "SUBSCRIPTION",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SUBSCRIPTION under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SUBSCRIPTION",
+        "confidence": 0.25243875210151284,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH064",
+        "text": "I would like fewer promotional newsletters and want to change my mailing preferences.",
+        "expected": "SUBSCRIPTION",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SUBSCRIPTION under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.4692326976916134,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH065",
+        "text": "Can you add my new email to the marketing newsletter subscription?",
+        "expected": "SUBSCRIPTION",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SUBSCRIPTION under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SUBSCRIPTION",
+        "confidence": 0.8395600126132865,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH066",
+        "text": "The unsubscribe button in the newsletter does not work. Please take me off the list.",
+        "expected": "SUBSCRIPTION",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SUBSCRIPTION under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SUBSCRIPTION",
+        "confidence": 0.6250781697193317,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH067",
+        "text": "I cannot access my profile; there is also a duplicate card charge that needs attention.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.6966535977746436,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH068",
+        "text": "The VAT invoice is under the wrong business name. My shipping address needs correction before dispatch.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.9259408577328404,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH069",
+        "text": "Please cancel the order placed this morning. Separately, tell me when the previous refund will arrive.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.41023758367098645,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH070",
+        "text": "An actual support agent should contact me about a login problem I cannot resolve.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.8810811443284284,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH071",
+        "text": "Can you update my delivery address? Also, which weekend delivery options exist?",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.9094766721221692,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH072",
+        "text": "Take me off your marketing newsletter, then correct the company name on my invoice.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "SUBSCRIPTION",
+        "confidence": 0.39074722248187727,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH073",
+        "text": "There was a duplicate payment for my purchase; I would also like a PDF invoice.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "INVOICE",
+        "confidence": 0.2608607008306039,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH074",
+        "text": "My password reset does not work. I want someone from support to call me.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.3579081998959793,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH075",
+        "text": "The package destination is wrong; what fee applies if I terminate my service contract early?",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "CANCEL",
+        "confidence": 0.4119205328253008,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH076",
+        "text": "Please cancel the purchase, and remove my email from promotional mailings.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.3368207043360848,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH077",
+        "text": "Where is my order now? I also need to change the invoice address for the purchase.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.419611450316145,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH078",
+        "text": "Please restore my access. Once I can log in, update my shipping address on the pending order.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.8447949330686748,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH079",
+        "text": "The card was declined, and I would like to know which delivery methods are offered.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.3779152663163306,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH080",
+        "text": "Your website layout is confusing. Also, I have not yet received the refund for my return.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.5246055904767242,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH081",
+        "text": "I need an agent to contact me; meanwhile stop sending the newsletter.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.7387906694214303,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH082",
+        "text": "Our tax invoice has the wrong name, and the payment was charged twice.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "PAYMENT",
+        "confidence": 0.4804413285648653,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH083",
+        "text": "Please alter my profile surname. In addition, can you issue a corrected invoice?",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.7865573425423293,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH084",
+        "text": "Can you tell me the early termination penalty? A separate question: do you deliver on Saturdays?",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "CANCEL",
+        "confidence": 0.6627081475461883,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH085",
+        "text": "An old address is on the shipping label. I also want to know where the previous purchase is in transit.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.5637724397427507,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH086",
+        "text": "I cannot sign in. My returned funds are missing too.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.47098945429770517,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH087",
+        "text": "Your filters are confusing. Please pass that on, then tell me how to reach a human agent.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.4436433397974509,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH088",
+        "text": "Please resend the VAT invoice and correct the delivery address before dispatch.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.9825944379446072,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH089",
+        "text": "The debit card payment failed. Can you cancel the purchase as well?",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "PAYMENT",
+        "confidence": 0.32130514761759765,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH090",
+        "text": "Your newsletters keep arriving, plus there is a charge on my card I do not recognize.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.2632768068029406,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH091",
+        "text": "Please change the shipment address. I also want to cancel a different purchase.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.6332541732860054,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH092",
+        "text": "I have a question about the early contract termination fee. Could a representative telephone me?",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "CANCEL",
+        "confidence": 0.7975587620329596,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH093",
+        "text": "The login form loops. For another issue, the invoice is missing our tax ID.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "INVOICE",
+        "confidence": 0.5673826889709249,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH094",
+        "text": "First remove my newsletter subscription. Next tell me whether the package can be sent to a locker.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "SUBSCRIPTION",
+        "confidence": 0.7978698114370405,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH095",
+        "text": "I liked your redesigned website, but I need the money back for the item I returned.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.6437225209802793,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH096",
+        "text": "My order never arrived. Separately the saved account email has a typo; can both be checked?",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.7295922975391967,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH097",
+        "text": "Your support team might know this: how do I replace the brake pads on a mountain bike?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.21409739146550988,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH098",
+        "text": "The city bus stop was moved across the street. Which bus reaches the museum?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.2009043698464117,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH099",
+        "text": "I want to place a baking tray in my oven; what temperature is best for sourdough?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.2899349977806379,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH100",
+        "text": "My garden pump will not start after the rain. Can you help me repair it?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.25107206288361067,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH101",
+        "text": "How should I train a puppy that barks when guests ring the bell?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.7586349073512568,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH102",
+        "text": "Can your team recommend a public school near my new home?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.24468052384765854,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH103",
+        "text": "How do I file an appeal against a parking ticket issued by my city council?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "FEEDBACK",
+        "confidence": 0.42498520519929506,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH104",
+        "text": "Which constellation is visible above the western horizon at this time of year?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.2164824637415069,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH105",
+        "text": "I need help moving my sofa safely down a narrow stairwell.",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.40192761076715156,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH106",
+        "text": "Please explain how to grow basil indoors without direct sunlight.",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.2792777961308782,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH107",
+        "text": "My phone battery overheats when I open the camera. What should I check?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.410371068351964,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH108",
+        "text": "Could you advise me on replacing a broken window latch in my apartment?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.4334322658432988,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH109",
+        "text": "Please tell me where to register for a local swimming class.",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.348917006981986,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH110",
+        "text": "My bicycle chain fell off. Can your support agent explain how to refit it?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.6802249316949541,
+        "review_detector_score": null,
+        "needs_review": false
+      },
+      {
+        "id": "EH111",
+        "text": "What is the best route to hike around the lake without climbing steep hills?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.20189213400651218,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH112",
+        "text": "I forgot my keys inside the house. How can I safely contact a locksmith?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.33732775786852703,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH113",
+        "text": "Does the public library lend books in large print?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.2310498621500536,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH114",
+        "text": "I would like a recipe for dumplings and a shopping list for four people.",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "FEEDBACK",
+        "confidence": 0.18847348439864886,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH115",
+        "text": "Can the support team advise on planting tomatoes during a hot summer?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.3775263034888018,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH116",
+        "text": "Tell me the next departure time for the regional railway service.",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.13759946992717856,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH117",
+        "text": "I need to repair my home printer. It feeds two blank sheets every time.",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.4223514740575882,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH118",
+        "text": "What should I pack for a two-night camping trip in wet weather?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.5716019414901529,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH119",
+        "text": "Can you recommend an introductory book about astronomy?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "FEEDBACK",
+        "confidence": 0.26895345374086516,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH120",
+        "text": "My neighbor found an injured bird outside. Who should we call?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.3450703548488482,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH121",
+        "text": "Please explain the rules for a game of chess to a beginner.",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.28990570143314454,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH122",
+        "text": "Could you help me choose a durable coat for my dog?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.24250103310223933,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH123",
+        "text": "It stopped working this morning; I am not sure what happened.",
+        "expected": "REVIEW",
+        "scenario": "ambiguous",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.2744527863546592,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH124",
+        "text": "Please make the same change as before; the old information is still showing.",
+        "expected": "REVIEW",
+        "scenario": "ambiguous",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.36793911533423185,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH125",
+        "text": "There is a problem with that thing we discussed yesterday.",
+        "expected": "REVIEW",
+        "scenario": "ambiguous",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.379859707580346,
+        "review_detector_score": null,
+        "needs_review": true
+      },
+      {
+        "id": "EH126",
+        "text": "Can you cancel it? I did not say which service or purchase I meant.",
+        "expected": "REVIEW",
+        "scenario": "ambiguous",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ORDER",
+        "confidence": 0.2816761241644071,
+        "review_detector_score": null,
+        "needs_review": true
+      }
+    ]
+  },
+  "selected": {
+    "name": "g1",
+    "threshold": 0.85,
+    "metrics": {
+      "count": 126,
+      "known_n": 66,
+      "known_correct": 52,
+      "known_accuracy": 0.7878787878787878,
+      "review_n": 60,
+      "review_found": 51,
+      "review_recall": 0.85,
+      "unflagged_n": 24,
+      "coverage": 0.19047619047619047,
+      "unsafe_count": 10,
+      "known_flagged_n": 51,
+      "scenario_counts": {
+        "ambiguous": {
+          "total": 4,
+          "flagged": 4
+        },
+        "multi-intent": {
+          "total": 30,
+          "flagged": 22
+        },
+        "out-of-scope": {
+          "total": 26,
+          "flagged": 25
+        }
+      }
+    },
+    "cases": [
+      {
+        "id": "EH001",
+        "text": "I replaced my phone and the sign-in authenticator no longer recognizes it. How do I recover access?",
+        "expected": "ACCOUNT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ACCOUNT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.6982333382273587,
+        "review_detector_score": 0.5754727125167847,
+        "needs_review": false
+      },
+      {
+        "id": "EH002",
+        "text": "My profile still displays the surname I used before marriage. Could you update it?",
+        "expected": "ACCOUNT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ACCOUNT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.7149092356103834,
+        "review_detector_score": 0.5530759692192078,
+        "needs_review": false
+      },
+      {
+        "id": "EH003",
+        "text": "Neither of my passwords works, and I have been locked out since breakfast.",
+        "expected": "ACCOUNT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ACCOUNT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.5878343760657803,
+        "review_detector_score": 0.4629962742328644,
+        "needs_review": true
+      },
+      {
+        "id": "EH004",
+        "text": "I accidentally attached my account to an email address with a typo. Can that be changed?",
+        "expected": "ACCOUNT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ACCOUNT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.5621651925266473,
+        "review_detector_score": 0.9377549290657043,
+        "needs_review": true
+      },
+      {
+        "id": "EH005",
+        "text": "Is there a way to turn off the extra login code on my personal profile?",
+        "expected": "ACCOUNT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ACCOUNT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.874399085134739,
+        "review_detector_score": 0.6935993432998657,
+        "needs_review": false
+      },
+      {
+        "id": "EH006",
+        "text": "The sign in button takes me back to the same screen every time I use Firefox.",
+        "expected": "ACCOUNT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ACCOUNT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.5483205961251516,
+        "review_detector_score": 0.7710520625114441,
+        "needs_review": true
+      },
+      {
+        "id": "EH007",
+        "text": "If I terminate the service agreement after four months, what early-exit fee will I owe?",
+        "expected": "CANCEL",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CANCEL under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CANCEL",
+        "confidence": 0.7850158739454166,
+        "review_detector_score": 0.48136648535728455,
+        "needs_review": false
+      },
+      {
+        "id": "EH008",
+        "text": "The contract lists a cancellation charge and a final date, but I cannot work out the amount.",
+        "expected": "CANCEL",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CANCEL under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CANCEL",
+        "confidence": 0.8198194821574207,
+        "review_detector_score": 0.4394320249557495,
+        "needs_review": false
+      },
+      {
+        "id": "EH009",
+        "text": "How large is the penalty for breaking my twelve-month agreement halfway through?",
+        "expected": "CANCEL",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CANCEL under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CANCEL",
+        "confidence": 0.2466999088047589,
+        "review_detector_score": 0.7451108694076538,
+        "needs_review": true
+      },
+      {
+        "id": "EH010",
+        "text": "Will you waive the early termination fee if the contract holder moves overseas?",
+        "expected": "CANCEL",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CANCEL under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CANCEL",
+        "confidence": 0.9589228238589138,
+        "review_detector_score": 0.3462379276752472,
+        "needs_review": false
+      },
+      {
+        "id": "EH011",
+        "text": "What is the formula for calculating my contract cancellation penalty?",
+        "expected": "CANCEL",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CANCEL under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CANCEL",
+        "confidence": 0.7161148265092967,
+        "review_detector_score": 0.840158998966217,
+        "needs_review": false
+      },
+      {
+        "id": "EH012",
+        "text": "I have a six-month agreement ending early; tell me whether there is a fee for ending it.",
+        "expected": "CANCEL",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CANCEL under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CANCEL",
+        "confidence": 0.22854657245398272,
+        "review_detector_score": 0.6282413601875305,
+        "needs_review": true
+      },
+      {
+        "id": "EH013",
+        "text": "Could someone from your support desk call me so I can explain the problem?",
+        "expected": "CONTACT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CONTACT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.5450429567842607,
+        "review_detector_score": 0.4157825708389282,
+        "needs_review": true
+      },
+      {
+        "id": "EH014",
+        "text": "I would rather discuss this with an actual agent instead of the automated assistant.",
+        "expected": "CONTACT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CONTACT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.7547673386327206,
+        "review_detector_score": 0.9499886631965637,
+        "needs_review": true
+      },
+      {
+        "id": "EH015",
+        "text": "Please provide a telephone number and opening hours for your customer care team.",
+        "expected": "CONTACT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CONTACT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "FEEDBACK",
+        "confidence": 0.32153312851242427,
+        "review_detector_score": 0.8223357796669006,
+        "needs_review": true
+      },
+      {
+        "id": "EH016",
+        "text": "The chatbot keeps looping. Is there a staffed chat service?",
+        "expected": "CONTACT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CONTACT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.4124685622119635,
+        "review_detector_score": 0.7218873500823975,
+        "needs_review": true
+      },
+      {
+        "id": "EH017",
+        "text": "How can I reach your company directly by email?",
+        "expected": "CONTACT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CONTACT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "FEEDBACK",
+        "confidence": 0.2983180919423414,
+        "review_detector_score": 0.16671372950077057,
+        "needs_review": true
+      },
+      {
+        "id": "EH018",
+        "text": "Can you arrange a conversation with a representative who can help me?",
+        "expected": "CONTACT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to CONTACT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.4521947999520814,
+        "review_detector_score": 0.30010074377059937,
+        "needs_review": true
+      },
+      {
+        "id": "EH019",
+        "text": "Before ordering, can you tell me whether Sunday delivery is available in rural areas?",
+        "expected": "DELIVERY",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to DELIVERY under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.21304368466684534,
+        "review_detector_score": 0.8834124207496643,
+        "needs_review": true
+      },
+      {
+        "id": "EH020",
+        "text": "What delivery choices and estimated transit times do you offer at checkout?",
+        "expected": "DELIVERY",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to DELIVERY under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.5442850301069438,
+        "review_detector_score": 0.7541826367378235,
+        "needs_review": true
+      },
+      {
+        "id": "EH021",
+        "text": "Is collection from a local pickup locker one of the available delivery methods?",
+        "expected": "DELIVERY",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to DELIVERY under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.5916528402410446,
+        "review_detector_score": 0.2475978136062622,
+        "needs_review": true
+      },
+      {
+        "id": "EH022",
+        "text": "How many business days does standard delivery usually take to reach an island address?",
+        "expected": "DELIVERY",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to DELIVERY under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.4323448693783117,
+        "review_detector_score": 0.8575598001480103,
+        "needs_review": true
+      },
+      {
+        "id": "EH023",
+        "text": "Do you offer a faster courier option, or only economy shipping?",
+        "expected": "DELIVERY",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to DELIVERY under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.28756689464244856,
+        "review_detector_score": 0.3330603837966919,
+        "needs_review": true
+      },
+      {
+        "id": "EH024",
+        "text": "Please explain the available delivery services for a heavy package.",
+        "expected": "DELIVERY",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to DELIVERY under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.5163429994863075,
+        "review_detector_score": 0.36330780386924744,
+        "needs_review": true
+      },
+      {
+        "id": "EH025",
+        "text": "The updated help page is easier to read; thank your design team for the improvement.",
+        "expected": "FEEDBACK",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to FEEDBACK under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.2623617428855548,
+        "review_detector_score": 0.7313345074653625,
+        "needs_review": true
+      },
+      {
+        "id": "EH026",
+        "text": "I have a suggestion: make the size guide available before customers reach checkout.",
+        "expected": "FEEDBACK",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to FEEDBACK under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "FEEDBACK",
+        "confidence": 0.2006376076904958,
+        "review_detector_score": 0.4480890929698944,
+        "needs_review": true
+      },
+      {
+        "id": "EH027",
+        "text": "Your search results are confusing and the filter labels are difficult to understand.",
+        "expected": "FEEDBACK",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to FEEDBACK under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.15562172235229074,
+        "review_detector_score": 0.47750645875930786,
+        "needs_review": true
+      },
+      {
+        "id": "EH028",
+        "text": "I wanted to share that your packaging looks thoughtful and the instructions are clear.",
+        "expected": "FEEDBACK",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to FEEDBACK under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SUBSCRIPTION",
+        "confidence": 0.2231328361062457,
+        "review_detector_score": 0.7412979006767273,
+        "needs_review": true
+      },
+      {
+        "id": "EH029",
+        "text": "The contrast of the menu is too low. It would be much easier to use with darker text.",
+        "expected": "FEEDBACK",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to FEEDBACK under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.5273410927238329,
+        "review_detector_score": 0.851876437664032,
+        "needs_review": true
+      },
+      {
+        "id": "EH030",
+        "text": "Please pass on my complaint about the confusing layout of the product gallery.",
+        "expected": "FEEDBACK",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to FEEDBACK under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.709762141790988,
+        "review_detector_score": 0.9077200889587402,
+        "needs_review": true
+      },
+      {
+        "id": "EH031",
+        "text": "Our finance office needs a tax invoice with the company registration number.",
+        "expected": "INVOICE",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to INVOICE under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.513400927338111,
+        "review_detector_score": 0.3168083131313324,
+        "needs_review": true
+      },
+      {
+        "id": "EH032",
+        "text": "Could you correct the billing name shown on the invoice for my paid purchase?",
+        "expected": "INVOICE",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to INVOICE under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "INVOICE",
+        "confidence": 0.5071565853930534,
+        "review_detector_score": 0.6670511364936829,
+        "needs_review": true
+      },
+      {
+        "id": "EH033",
+        "text": "Where can I find a downloadable PDF invoice for last month?",
+        "expected": "INVOICE",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to INVOICE under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "INVOICE",
+        "confidence": 0.5562803947941615,
+        "review_detector_score": 0.4543445408344269,
+        "needs_review": true
+      },
+      {
+        "id": "EH034",
+        "text": "The invoice total is fine, but our business address is absent from the document.",
+        "expected": "INVOICE",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to INVOICE under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "INVOICE",
+        "confidence": 0.43731198835759205,
+        "review_detector_score": 0.7964628338813782,
+        "needs_review": true
+      },
+      {
+        "id": "EH035",
+        "text": "Can you reissue the invoice in the name of our association?",
+        "expected": "INVOICE",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to INVOICE under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "INVOICE",
+        "confidence": 0.7958126085898504,
+        "review_detector_score": 0.7901486158370972,
+        "needs_review": false
+      },
+      {
+        "id": "EH036",
+        "text": "I need an invoice and receipt; where are those documents stored in the portal?",
+        "expected": "INVOICE",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to INVOICE under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "INVOICE",
+        "confidence": 0.4307129603350727,
+        "review_detector_score": 0.9583702683448792,
+        "needs_review": true
+      },
+      {
+        "id": "EH037",
+        "text": "I ordered the wrong jacket size this morning; can I change the item before packing?",
+        "expected": "ORDER",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ORDER under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.21906877656097337,
+        "review_detector_score": 0.6333614587783813,
+        "needs_review": true
+      },
+      {
+        "id": "EH038",
+        "text": "Please cancel my purchase made an hour ago, before it leaves your warehouse.",
+        "expected": "ORDER",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ORDER under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ORDER",
+        "confidence": 0.4567819960467357,
+        "review_detector_score": 0.69657963514328,
+        "needs_review": true
+      },
+      {
+        "id": "EH039",
+        "text": "The order page contains a tracking link that has not updated. Where is that purchase?",
+        "expected": "ORDER",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ORDER under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ORDER",
+        "confidence": 0.7051846500632476,
+        "review_detector_score": 0.7368884682655334,
+        "needs_review": false
+      },
+      {
+        "id": "EH040",
+        "text": "I bought two identical items by mistake. Can you remove one from the order?",
+        "expected": "ORDER",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ORDER under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ORDER",
+        "confidence": 0.45954402978597075,
+        "review_detector_score": 0.49277618527412415,
+        "needs_review": true
+      },
+      {
+        "id": "EH041",
+        "text": "Please check whether order 7042 has been dispatched and give me its tracking status.",
+        "expected": "ORDER",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ORDER under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ORDER",
+        "confidence": 0.4100639797715808,
+        "review_detector_score": 0.776227593421936,
+        "needs_review": true
+      },
+      {
+        "id": "EH042",
+        "text": "What items were included in the purchase I placed last Tuesday?",
+        "expected": "ORDER",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to ORDER under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ORDER",
+        "confidence": 0.5008267357502497,
+        "review_detector_score": 0.5711724162101746,
+        "needs_review": true
+      },
+      {
+        "id": "EH043",
+        "text": "The checkout rejected my debit card even though my bank approved the transaction.",
+        "expected": "PAYMENT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to PAYMENT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.4988889354526333,
+        "review_detector_score": 0.40019720792770386,
+        "needs_review": true
+      },
+      {
+        "id": "EH044",
+        "text": "I see two identical charges on my card for a single checkout. Please investigate.",
+        "expected": "PAYMENT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to PAYMENT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.31973204853696835,
+        "review_detector_score": 0.5886638760566711,
+        "needs_review": true
+      },
+      {
+        "id": "EH045",
+        "text": "Which payment methods can I use and is a debit card accepted?",
+        "expected": "PAYMENT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to PAYMENT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "PAYMENT",
+        "confidence": 0.8818978184995336,
+        "review_detector_score": 0.9271654486656189,
+        "needs_review": true
+      },
+      {
+        "id": "EH046",
+        "text": "At the last payment step the page showed an error and my card was not charged.",
+        "expected": "PAYMENT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to PAYMENT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "PAYMENT",
+        "confidence": 0.5644408520308449,
+        "review_detector_score": 0.711836040019989,
+        "needs_review": true
+      },
+      {
+        "id": "EH047",
+        "text": "The bank says payment succeeded but the store checkout says it failed.",
+        "expected": "PAYMENT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to PAYMENT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "PAYMENT",
+        "confidence": 0.725354172503166,
+        "review_detector_score": 0.29144513607025146,
+        "needs_review": false
+      },
+      {
+        "id": "EH048",
+        "text": "How do I replace the saved card used for future payments?",
+        "expected": "PAYMENT",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to PAYMENT under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "PAYMENT",
+        "confidence": 0.443292920149848,
+        "review_detector_score": 0.35581356287002563,
+        "needs_review": true
+      },
+      {
+        "id": "EH049",
+        "text": "My return reached your warehouse two weeks ago; when will the money be reimbursed?",
+        "expected": "REFUND",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to REFUND under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.40830962894405237,
+        "review_detector_score": 0.5836458802223206,
+        "needs_review": true
+      },
+      {
+        "id": "EH050",
+        "text": "Please send the purchase amount back to the card I originally used.",
+        "expected": "REFUND",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to REFUND under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.19931626137523678,
+        "review_detector_score": 0.4777587056159973,
+        "needs_review": true
+      },
+      {
+        "id": "EH051",
+        "text": "I returned the shoes and received a confirmation, but the refund is still missing.",
+        "expected": "REFUND",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to REFUND under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.7881790395158875,
+        "review_detector_score": 0.9832144975662231,
+        "needs_review": true
+      },
+      {
+        "id": "EH052",
+        "text": "I was promised a partial reimbursement for the damaged item. Has it been issued?",
+        "expected": "REFUND",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to REFUND under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.3996873207739494,
+        "review_detector_score": 0.4268011748790741,
+        "needs_review": true
+      },
+      {
+        "id": "EH053",
+        "text": "The refund went to an expired card. How will I receive the returned funds?",
+        "expected": "REFUND",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to REFUND under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.5040849956542648,
+        "review_detector_score": 0.44001492857933044,
+        "needs_review": true
+      },
+      {
+        "id": "EH054",
+        "text": "Can you explain the expected timing of a refund after you accept a return?",
+        "expected": "REFUND",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to REFUND under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.5636425501346422,
+        "review_detector_score": 0.21719232201576233,
+        "needs_review": true
+      },
+      {
+        "id": "EH055",
+        "text": "Please change the destination address on my existing purchase to my new workplace.",
+        "expected": "SHIPPING",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SHIPPING under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.7344639828753551,
+        "review_detector_score": 0.7412457466125488,
+        "needs_review": false
+      },
+      {
+        "id": "EH056",
+        "text": "I entered the wrong postcode and street for shipping. Can the address be corrected?",
+        "expected": "SHIPPING",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SHIPPING under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.9387649689761665,
+        "review_detector_score": 0.9327366352081299,
+        "needs_review": true
+      },
+      {
+        "id": "EH057",
+        "text": "My package has not been dispatched, so please replace the saved delivery address.",
+        "expected": "SHIPPING",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SHIPPING under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.9192146506714847,
+        "review_detector_score": 0.734666645526886,
+        "needs_review": false
+      },
+      {
+        "id": "EH058",
+        "text": "Can I edit the shipping address after ordering but before the item leaves the warehouse?",
+        "expected": "SHIPPING",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SHIPPING under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.9135242092292319,
+        "review_detector_score": 0.6018524765968323,
+        "needs_review": false
+      },
+      {
+        "id": "EH059",
+        "text": "The recipient address has an apartment number missing. Please update it.",
+        "expected": "SHIPPING",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SHIPPING under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.8437108319696938,
+        "review_detector_score": 0.8520306348800659,
+        "needs_review": true
+      },
+      {
+        "id": "EH060",
+        "text": "I moved house yesterday and need to amend the address for an unshipped order.",
+        "expected": "SHIPPING",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SHIPPING under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.8169872355497924,
+        "review_detector_score": 0.981592059135437,
+        "needs_review": true
+      },
+      {
+        "id": "EH061",
+        "text": "Please remove my address from the promotional mailing list.",
+        "expected": "SUBSCRIPTION",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SUBSCRIPTION under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.7951486076223232,
+        "review_detector_score": 0.8039992451667786,
+        "needs_review": false
+      },
+      {
+        "id": "EH062",
+        "text": "I never signed up for your newsletter. Stop the weekly marketing emails.",
+        "expected": "SUBSCRIPTION",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SUBSCRIPTION under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SUBSCRIPTION",
+        "confidence": 0.5700745891012102,
+        "review_detector_score": 0.2714894711971283,
+        "needs_review": true
+      },
+      {
+        "id": "EH063",
+        "text": "How can I subscribe to the product-news email bulletin?",
+        "expected": "SUBSCRIPTION",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SUBSCRIPTION under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SUBSCRIPTION",
+        "confidence": 0.25243875210151284,
+        "review_detector_score": 0.1180088073015213,
+        "needs_review": true
+      },
+      {
+        "id": "EH064",
+        "text": "I would like fewer promotional newsletters and want to change my mailing preferences.",
+        "expected": "SUBSCRIPTION",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SUBSCRIPTION under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.4692326976916134,
+        "review_detector_score": 0.6610036492347717,
+        "needs_review": true
+      },
+      {
+        "id": "EH065",
+        "text": "Can you add my new email to the marketing newsletter subscription?",
+        "expected": "SUBSCRIPTION",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SUBSCRIPTION under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SUBSCRIPTION",
+        "confidence": 0.8395600126132865,
+        "review_detector_score": 0.4245520234107971,
+        "needs_review": false
+      },
+      {
+        "id": "EH066",
+        "text": "The unsubscribe button in the newsletter does not work. Please take me off the list.",
+        "expected": "SUBSCRIPTION",
+        "scenario": "single-intent",
+        "rationale": "The single expressed request is assigned to SUBSCRIPTION under the fixed Bitext-derived taxonomy.",
+        "source": "AI-authored synthetic",
+        "predicted": "SUBSCRIPTION",
+        "confidence": 0.6250781697193317,
+        "review_detector_score": 0.96540766954422,
+        "needs_review": true
+      },
+      {
+        "id": "EH067",
+        "text": "I cannot access my profile; there is also a duplicate card charge that needs attention.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.6966535977746436,
+        "review_detector_score": 0.7390264272689819,
+        "needs_review": false
+      },
+      {
+        "id": "EH068",
+        "text": "The VAT invoice is under the wrong business name. My shipping address needs correction before dispatch.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.9259408577328404,
+        "review_detector_score": 0.8886100053787231,
+        "needs_review": true
+      },
+      {
+        "id": "EH069",
+        "text": "Please cancel the order placed this morning. Separately, tell me when the previous refund will arrive.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.41023758367098645,
+        "review_detector_score": 0.9654463529586792,
+        "needs_review": true
+      },
+      {
+        "id": "EH070",
+        "text": "An actual support agent should contact me about a login problem I cannot resolve.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.8810811443284284,
+        "review_detector_score": 0.8734551072120667,
+        "needs_review": true
+      },
+      {
+        "id": "EH071",
+        "text": "Can you update my delivery address? Also, which weekend delivery options exist?",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.9094766721221692,
+        "review_detector_score": 0.6082690954208374,
+        "needs_review": false
+      },
+      {
+        "id": "EH072",
+        "text": "Take me off your marketing newsletter, then correct the company name on my invoice.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "SUBSCRIPTION",
+        "confidence": 0.39074722248187727,
+        "review_detector_score": 0.8819849491119385,
+        "needs_review": true
+      },
+      {
+        "id": "EH073",
+        "text": "There was a duplicate payment for my purchase; I would also like a PDF invoice.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "INVOICE",
+        "confidence": 0.2608607008306039,
+        "review_detector_score": 0.8966242671012878,
+        "needs_review": true
+      },
+      {
+        "id": "EH074",
+        "text": "My password reset does not work. I want someone from support to call me.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.3579081998959793,
+        "review_detector_score": 0.6377048492431641,
+        "needs_review": true
+      },
+      {
+        "id": "EH075",
+        "text": "The package destination is wrong; what fee applies if I terminate my service contract early?",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "CANCEL",
+        "confidence": 0.4119205328253008,
+        "review_detector_score": 0.7724414467811584,
+        "needs_review": true
+      },
+      {
+        "id": "EH076",
+        "text": "Please cancel the purchase, and remove my email from promotional mailings.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.3368207043360848,
+        "review_detector_score": 0.5270124673843384,
+        "needs_review": true
+      },
+      {
+        "id": "EH077",
+        "text": "Where is my order now? I also need to change the invoice address for the purchase.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.419611450316145,
+        "review_detector_score": 0.9414150714874268,
+        "needs_review": true
+      },
+      {
+        "id": "EH078",
+        "text": "Please restore my access. Once I can log in, update my shipping address on the pending order.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.8447949330686748,
+        "review_detector_score": 0.9441593885421753,
+        "needs_review": true
+      },
+      {
+        "id": "EH079",
+        "text": "The card was declined, and I would like to know which delivery methods are offered.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.3779152663163306,
+        "review_detector_score": 0.6759102940559387,
+        "needs_review": true
+      },
+      {
+        "id": "EH080",
+        "text": "Your website layout is confusing. Also, I have not yet received the refund for my return.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.5246055904767242,
+        "review_detector_score": 0.9146298170089722,
+        "needs_review": true
+      },
+      {
+        "id": "EH081",
+        "text": "I need an agent to contact me; meanwhile stop sending the newsletter.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.7387906694214303,
+        "review_detector_score": 0.5566902756690979,
+        "needs_review": false
+      },
+      {
+        "id": "EH082",
+        "text": "Our tax invoice has the wrong name, and the payment was charged twice.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "PAYMENT",
+        "confidence": 0.4804413285648653,
+        "review_detector_score": 0.6801465153694153,
+        "needs_review": true
+      },
+      {
+        "id": "EH083",
+        "text": "Please alter my profile surname. In addition, can you issue a corrected invoice?",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.7865573425423293,
+        "review_detector_score": 0.9743121266365051,
+        "needs_review": true
+      },
+      {
+        "id": "EH084",
+        "text": "Can you tell me the early termination penalty? A separate question: do you deliver on Saturdays?",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "CANCEL",
+        "confidence": 0.6627081475461883,
+        "review_detector_score": 0.7103013396263123,
+        "needs_review": false
+      },
+      {
+        "id": "EH085",
+        "text": "An old address is on the shipping label. I also want to know where the previous purchase is in transit.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.5637724397427507,
+        "review_detector_score": 0.9899925589561462,
+        "needs_review": true
+      },
+      {
+        "id": "EH086",
+        "text": "I cannot sign in. My returned funds are missing too.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.47098945429770517,
+        "review_detector_score": 0.7504941821098328,
+        "needs_review": true
+      },
+      {
+        "id": "EH087",
+        "text": "Your filters are confusing. Please pass that on, then tell me how to reach a human agent.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.4436433397974509,
+        "review_detector_score": 0.9401001930236816,
+        "needs_review": true
+      },
+      {
+        "id": "EH088",
+        "text": "Please resend the VAT invoice and correct the delivery address before dispatch.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.9825944379446072,
+        "review_detector_score": 0.9847745299339294,
+        "needs_review": true
+      },
+      {
+        "id": "EH089",
+        "text": "The debit card payment failed. Can you cancel the purchase as well?",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "PAYMENT",
+        "confidence": 0.32130514761759765,
+        "review_detector_score": 0.25521352887153625,
+        "needs_review": true
+      },
+      {
+        "id": "EH090",
+        "text": "Your newsletters keep arriving, plus there is a charge on my card I do not recognize.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.2632768068029406,
+        "review_detector_score": 0.70772385597229,
+        "needs_review": true
+      },
+      {
+        "id": "EH091",
+        "text": "Please change the shipment address. I also want to cancel a different purchase.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "SHIPPING",
+        "confidence": 0.6332541732860054,
+        "review_detector_score": 0.8781045079231262,
+        "needs_review": true
+      },
+      {
+        "id": "EH092",
+        "text": "I have a question about the early contract termination fee. Could a representative telephone me?",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "CANCEL",
+        "confidence": 0.7975587620329596,
+        "review_detector_score": 0.356035977602005,
+        "needs_review": false
+      },
+      {
+        "id": "EH093",
+        "text": "The login form loops. For another issue, the invoice is missing our tax ID.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "INVOICE",
+        "confidence": 0.5673826889709249,
+        "review_detector_score": 0.912708580493927,
+        "needs_review": true
+      },
+      {
+        "id": "EH094",
+        "text": "First remove my newsletter subscription. Next tell me whether the package can be sent to a locker.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "SUBSCRIPTION",
+        "confidence": 0.7978698114370405,
+        "review_detector_score": 0.7304826378822327,
+        "needs_review": false
+      },
+      {
+        "id": "EH095",
+        "text": "I liked your redesigned website, but I need the money back for the item I returned.",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.6437225209802793,
+        "review_detector_score": 0.6464196443557739,
+        "needs_review": false
+      },
+      {
+        "id": "EH096",
+        "text": "My order never arrived. Separately the saved account email has a typo; can both be checked?",
+        "expected": "REVIEW",
+        "scenario": "multi-intent",
+        "rationale": "The message expresses two distinct requests and needs review rather than one forced topic.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.7295922975391967,
+        "review_detector_score": 0.6724804043769836,
+        "needs_review": false
+      },
+      {
+        "id": "EH097",
+        "text": "Your support team might know this: how do I replace the brake pads on a mountain bike?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.21409739146550988,
+        "review_detector_score": 0.6994373798370361,
+        "needs_review": true
+      },
+      {
+        "id": "EH098",
+        "text": "The city bus stop was moved across the street. Which bus reaches the museum?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.2009043698464117,
+        "review_detector_score": 0.24928802251815796,
+        "needs_review": true
+      },
+      {
+        "id": "EH099",
+        "text": "I want to place a baking tray in my oven; what temperature is best for sourdough?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.2899349977806379,
+        "review_detector_score": 0.8929364085197449,
+        "needs_review": true
+      },
+      {
+        "id": "EH100",
+        "text": "My garden pump will not start after the rain. Can you help me repair it?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.25107206288361067,
+        "review_detector_score": 0.48304295539855957,
+        "needs_review": true
+      },
+      {
+        "id": "EH101",
+        "text": "How should I train a puppy that barks when guests ring the bell?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.7586349073512568,
+        "review_detector_score": 0.9305243492126465,
+        "needs_review": true
+      },
+      {
+        "id": "EH102",
+        "text": "Can your team recommend a public school near my new home?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.24468052384765854,
+        "review_detector_score": 0.20406968891620636,
+        "needs_review": true
+      },
+      {
+        "id": "EH103",
+        "text": "How do I file an appeal against a parking ticket issued by my city council?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "FEEDBACK",
+        "confidence": 0.42498520519929506,
+        "review_detector_score": 0.2724737823009491,
+        "needs_review": true
+      },
+      {
+        "id": "EH104",
+        "text": "Which constellation is visible above the western horizon at this time of year?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.2164824637415069,
+        "review_detector_score": 0.5972921252250671,
+        "needs_review": true
+      },
+      {
+        "id": "EH105",
+        "text": "I need help moving my sofa safely down a narrow stairwell.",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.40192761076715156,
+        "review_detector_score": 0.35914725065231323,
+        "needs_review": true
+      },
+      {
+        "id": "EH106",
+        "text": "Please explain how to grow basil indoors without direct sunlight.",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.2792777961308782,
+        "review_detector_score": 0.3705374002456665,
+        "needs_review": true
+      },
+      {
+        "id": "EH107",
+        "text": "My phone battery overheats when I open the camera. What should I check?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "DELIVERY",
+        "confidence": 0.410371068351964,
+        "review_detector_score": 0.776056706905365,
+        "needs_review": true
+      },
+      {
+        "id": "EH108",
+        "text": "Could you advise me on replacing a broken window latch in my apartment?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.4334322658432988,
+        "review_detector_score": 0.9593806862831116,
+        "needs_review": true
+      },
+      {
+        "id": "EH109",
+        "text": "Please tell me where to register for a local swimming class.",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.348917006981986,
+        "review_detector_score": 0.6712778210639954,
+        "needs_review": true
+      },
+      {
+        "id": "EH110",
+        "text": "My bicycle chain fell off. Can your support agent explain how to refit it?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.6802249316949541,
+        "review_detector_score": 0.6568601131439209,
+        "needs_review": false
+      },
+      {
+        "id": "EH111",
+        "text": "What is the best route to hike around the lake without climbing steep hills?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.20189213400651218,
+        "review_detector_score": 0.5935494303703308,
+        "needs_review": true
+      },
+      {
+        "id": "EH112",
+        "text": "I forgot my keys inside the house. How can I safely contact a locksmith?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.33732775786852703,
+        "review_detector_score": 0.20583173632621765,
+        "needs_review": true
+      },
+      {
+        "id": "EH113",
+        "text": "Does the public library lend books in large print?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.2310498621500536,
+        "review_detector_score": 0.8138972520828247,
+        "needs_review": true
+      },
+      {
+        "id": "EH114",
+        "text": "I would like a recipe for dumplings and a shopping list for four people.",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "FEEDBACK",
+        "confidence": 0.18847348439864886,
+        "review_detector_score": 0.9453446269035339,
+        "needs_review": true
+      },
+      {
+        "id": "EH115",
+        "text": "Can the support team advise on planting tomatoes during a hot summer?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.3775263034888018,
+        "review_detector_score": 0.515214204788208,
+        "needs_review": true
+      },
+      {
+        "id": "EH116",
+        "text": "Tell me the next departure time for the regional railway service.",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.13759946992717856,
+        "review_detector_score": 0.9668375849723816,
+        "needs_review": true
+      },
+      {
+        "id": "EH117",
+        "text": "I need to repair my home printer. It feeds two blank sheets every time.",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.4223514740575882,
+        "review_detector_score": 0.24999797344207764,
+        "needs_review": true
+      },
+      {
+        "id": "EH118",
+        "text": "What should I pack for a two-night camping trip in wet weather?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "REFUND",
+        "confidence": 0.5716019414901529,
+        "review_detector_score": 0.9369015693664551,
+        "needs_review": true
+      },
+      {
+        "id": "EH119",
+        "text": "Can you recommend an introductory book about astronomy?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "FEEDBACK",
+        "confidence": 0.26895345374086516,
+        "review_detector_score": 0.5762913823127747,
+        "needs_review": true
+      },
+      {
+        "id": "EH120",
+        "text": "My neighbor found an injured bird outside. Who should we call?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "CONTACT",
+        "confidence": 0.3450703548488482,
+        "review_detector_score": 0.625774085521698,
+        "needs_review": true
+      },
+      {
+        "id": "EH121",
+        "text": "Please explain the rules for a game of chess to a beginner.",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.28990570143314454,
+        "review_detector_score": 0.6928536891937256,
+        "needs_review": true
+      },
+      {
+        "id": "EH122",
+        "text": "Could you help me choose a durable coat for my dog?",
+        "expected": "REVIEW",
+        "scenario": "out-of-scope",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.24250103310223933,
+        "review_detector_score": 0.32202035188674927,
+        "needs_review": true
+      },
+      {
+        "id": "EH123",
+        "text": "It stopped working this morning; I am not sure what happened.",
+        "expected": "REVIEW",
+        "scenario": "ambiguous",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.2744527863546592,
+        "review_detector_score": 0.3970377743244171,
+        "needs_review": true
+      },
+      {
+        "id": "EH124",
+        "text": "Please make the same change as before; the old information is still showing.",
+        "expected": "REVIEW",
+        "scenario": "ambiguous",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.36793911533423185,
+        "review_detector_score": 0.8169974684715271,
+        "needs_review": true
+      },
+      {
+        "id": "EH125",
+        "text": "There is a problem with that thing we discussed yesterday.",
+        "expected": "REVIEW",
+        "scenario": "ambiguous",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ACCOUNT",
+        "confidence": 0.379859707580346,
+        "review_detector_score": 0.5126470327377319,
+        "needs_review": true
+      },
+      {
+        "id": "EH126",
+        "text": "Can you cancel it? I did not say which service or purchase I meant.",
+        "expected": "REVIEW",
+        "scenario": "ambiguous",
+        "rationale": "The request is unclear or outside the eleven specified support topics; manual review is expected.",
+        "source": "AI-authored synthetic",
+        "predicted": "ORDER",
+        "confidence": 0.2816761241644071,
+        "review_detector_score": 0.190614253282547,
+        "needs_review": true
+      }
+    ]
+  },
+  "active_model": "baseline (application not modified by experiment)",
+  "limitations": [
+    "Synthetic training and test examples; annotation not independently verified by human; real-world performance unknown.",
+    "Original Bitext categories do not detect multiple intents within the same broad category.",
+    "Splits group original exact normalized examples; semantically similar templates can overlap.",
+    "The detector is combined with current score rule; unflagged items are not automatically sent anywhere.",
+    "CLINC intent allowlist is only a proxy for unrelatedness and can contain ambiguous rows.",
+    "This holdout uses message text; live API uses subject and body."
+  ]
+}

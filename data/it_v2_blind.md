@@ -1,0 +1,11 @@
+# IT v2 blind synthetic diagnostic holdout
+
+Created by one AI author without inspecting project models, train/dev sets, historical tests, current model outputs, or the external real-ticket corpus. The author received six category definitions and the requirement to distinguish UNKNOWN from AMBIGUOUS. This claim describes workflow, not independent verification of the author's entire conversational context.
+
+Total: 100 AI-authored synthetic requests. Six known labels have 10 examples each; UNKNOWN has 30 and AMBIGUOUS has 10. These proportions are deliberately balanced for diagnostics and do not estimate real-world prevalence. A single AI author and subjective labels create an unmeasured annotation reliability risk. There was no human adjudication and no independent demographic or fairness assessment.
+
+UNKNOWN is assigned only to messages framed as general knowledge, school exercises, or personal non-IT tasks without an operational request for IT support. An IT-related theoretical question is UNKNOWN under this narrow operational definition, though a different deployed service scope could treat it as in scope. Requests lacking a target, system or sufficient context are AMBIGUOUS; do not score them as ground truth UNKNOWN or known.
+
+Examples were deliberately written in varied styles with small numbers of Portuguese, German and Spanish messages where the author was confident; these are not a validated multilingual benchmark. Scenario counts: {'ordinary': 45, 'non_english': 12, 'short': 4, 'non_support': 20, 'technical_out_of_scope': 9, 'missing_context': 10}. Label counts: {'Active Directory': 10, 'Computer-Services': 10, 'Fileservice': 10, 'O365': 10, 'Software': 10, 'Support general': 10, 'UNKNOWN': 30, 'AMBIGUOUS': 10}. IDs are unique and texts are unique after casefold-and-whitespace normalization. The author did not compare semantic similarity to source data.
+
+SHA-256 of UTF-8 JSONL: `01ce1d6aa441b25abc282c61ac51d95d0fc9d3be85403249de14741d7c2c4a92`. The model, preprocessing, thresholds, and comparison rule must be frozen before inspecting results on this file; once used for tuning, it is no longer an independent final test. Any post-hoc label corrections require a new version and transparent sensitivity analysis. No information in this dataset establishes expected error rates on real customer requests.

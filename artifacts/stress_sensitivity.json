@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "created_utc": "2026-10-29T09:29:51.695518+00:00",
+  "case_id": "H059",
+  "original_expected": "REVIEW",
+  "sensitivity_expected": "ORDER",
+  "rationale": "Bitext has ORDER/track_order and DELIVERY/delivery_period intents; an uncertain parcel-tracking status request may reasonably be ORDER, but overlaps with DELIVERY. This alternative is post-hoc and unverified by a second human annotator.",
+  "selection_changed": false,
+  "holdout_changed": false,
+  "source_holdout_sha256": "15da801592da62f71fcecf1192ac03b842b89d5d65a317f43f14f6bfe800b8ef",
+  "source_selection_sha256": "5f792b8f35f4182f917b2145e1fb70ecb742ffb0fe18e8acf69396fead74efda",
+  "models": [
+    {
+      "name": "bitext-tfidf-logreg-v1",
+      "key": "baseline",
+      "role": "active",
+      "original": {
+        "accuracy": 0.6363636363636364,
+        "macro_f1": 0.6018716577540105,
+        "coverage": 0.35,
+        "accepted_in_scope_accuracy": 0.9411764705882353,
+        "should_review_recall": 0.75,
+        "unsafe_auto_count": 5,
+        "counts": {
+          "total": 60,
+          "in_scope": 44,
+          "should_review": 16,
+          "accepted_in_scope": 17
+        }
+      },
+      "sensitivity": {
+        "accuracy": 0.6222222222222222,
+        "macro_f1": 0.5894618453441982,
+        "coverage": 0.35,
+        "accepted_in_scope_accuracy": 0.9411764705882353,
+        "should_review_recall": 0.7333333333333333,
+        "unsafe_auto_count": 5,
+        "counts": {
+          "total": 60,
+          "in_scope": 45,
+          "should_review": 15,
+          "accepted_in_scope": 17
+        }
+      },
+      "case": {
+        "predicted": "REFUND",
+        "confidence": 0.19104092539923112,
+        "needs_review": true
+      }
+    },
+    {
+      "name": "bitext-char-logreg-candidate-v2",
+      "key": "candidate",
+      "role": "comparison",
+      "original": {
+        "accuracy": 0.75,
+        "macro_f1": 0.7171717171717171,
+        "coverage": 0.3,
+        "accepted_in_scope_accuracy": 0.9375,
+        "should_review_recall": 0.875,
+        "unsafe_auto_count": 3,
+        "counts": {
+          "total": 60,
+          "in_scope": 44,
+          "should_review": 16,
+          "accepted_in_scope": 16
+        }
+      },
+      "sensitivity": {
+        "accuracy": 0.7333333333333333,
+        "macro_f1": 0.6993506493506493,
+        "coverage": 0.3,
+        "accepted_in_scope_accuracy": 0.9375,
+        "should_review_recall": 0.8666666666666667,
+        "unsafe_auto_count": 3,
+        "counts": {
+          "total": 60,
+          "in_scope": 45,
+          "should_review": 15,
+          "accepted_in_scope": 16
+        }
+      },
+      "case": {
+        "predicted": "REFUND",
+        "confidence": 0.18574742431268748,
+        "needs_review": true
+      }
+    }
+  ]
+}

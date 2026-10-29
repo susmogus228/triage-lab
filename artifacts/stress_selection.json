@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-10-29T09:26:01.886045+00:00",
+  "protocol": "Candidate and gate fixed before reading independent holdout. Threshold 0.6 fixed for both, matching app policy.",
+  "dev_sha256": "dffef4ca2d760f448aa8ae23bb97faa4c95dd4be5ca75fd1c868fd9277a583ce",
+  "baseline_sha256": "4a07b680675a5f6f60be405845bcd77795596fb5f63c70c6fe41c787b2722404",
+  "candidate_sha256": "e7031972daf88fa017d97dd2842cfea642bfa0e3a1383e3fe156a2fb7f8d8f54",
+  "source_sha256": "6f81102b0100b97b8468eb04368033a23206bf1fde9d53500d5806ec1001a434",
+  "selected": "baseline",
+  "reason": "Candidate did not meet predeclared accuracy and unsafe-decision gates on dev",
+  "development": {
+    "baseline": {
+      "accuracy": 0.7954545454545454,
+      "macro_f1": 0.8138528138528138,
+      "coverage": 0.4666666666666667,
+      "accepted_in_scope_accuracy": 0.9523809523809523,
+      "should_review_recall": 0.5625,
+      "unsafe_auto_count": 8,
+      "unsafe_auto_rate": 0.13333333333333333,
+      "counts": {
+        "total": 60,
+        "in_scope": 44,
+        "should_review": 16,
+        "accepted_in_scope": 21
+      }
+    },
+    "candidate": {
+      "accuracy": 0.7727272727272727,
+      "macro_f1": 0.7731864095500459,
+      "coverage": 0.6,
+      "accepted_in_scope_accuracy": 0.9642857142857143,
+      "should_review_recall": 0.5,
+      "unsafe_auto_count": 9,
+      "unsafe_auto_rate": 0.15,
+      "counts": {
+        "total": 60,
+        "in_scope": 44,
+        "should_review": 16,
+        "accepted_in_scope": 28
+      }
+    }
+  }
+}

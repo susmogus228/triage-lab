@@ -1,0 +1,271 @@
+{
+  "created_utc": "2026-10-29T10:09:47.236796+00:00",
+  "protocol": "Train and dev only; test never opened for model selection; select dev macro F1 with tie to tfidf. 6 trained labels, missing label treated as unseen.",
+  "selected": "tfidf",
+  "labels": [
+    "Active Directory",
+    "Computer-Services",
+    "Fileservice",
+    "O365",
+    "Software",
+    "Support general"
+  ],
+  "models": {
+    "tfidf": {
+      "name": "TF-IDF word + character logistic regression",
+      "kind": "tfidf",
+      "dev": {
+        "exact_unique_groups": 181,
+        "exact_accuracy": 0.7182320441988951,
+        "exact_macro_f1": 0.7161779001767451,
+        "exact_conflicting_groups": 0,
+        "accuracy": 0.7182320441988951,
+        "macro_f1": 0.7161779001767451,
+        "labels": [
+          "Active Directory",
+          "Computer-Services",
+          "Fileservice",
+          "O365",
+          "Software",
+          "Support general"
+        ],
+        "confusion_matrix": [
+          [
+            10,
+            0,
+            1,
+            2,
+            1,
+            2
+          ],
+          [
+            0,
+            10,
+            0,
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            30,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            17,
+            2,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            6,
+            16,
+            3
+          ],
+          [
+            3,
+            0,
+            1,
+            9,
+            5,
+            47
+          ]
+        ],
+        "per_class": {
+          "Active Directory": {
+            "precision": 0.6666666666666666,
+            "recall": 0.625,
+            "f1-score": 0.6451612903225806,
+            "support": 16.0
+          },
+          "Computer-Services": {
+            "precision": 1.0,
+            "recall": 0.7692307692307693,
+            "f1-score": 0.8695652173913043,
+            "support": 13.0
+          },
+          "Fileservice": {
+            "precision": 0.9090909090909091,
+            "recall": 0.8108108108108109,
+            "f1-score": 0.8571428571428571,
+            "support": 37.0
+          },
+          "O365": {
+            "precision": 0.4473684210526316,
+            "recall": 0.68,
+            "f1-score": 0.5396825396825397,
+            "support": 25.0
+          },
+          "Software": {
+            "precision": 0.6153846153846154,
+            "recall": 0.64,
+            "f1-score": 0.6274509803921569,
+            "support": 25.0
+          },
+          "Support general": {
+            "precision": 0.7966101694915254,
+            "recall": 0.7230769230769231,
+            "f1-score": 0.7580645161290323,
+            "support": 65.0
+          }
+        },
+        "rows": 181,
+        "unique_groups": 179,
+        "group_accuracy": 0.7150837988826816,
+        "group_macro_f1": 0.7148338141552397,
+        "excluded_conflicting_groups": 0
+      }
+    },
+    "multilingual": {
+      "name": "Multilingual MiniLM, trainable last encoder layer + classifier",
+      "kind": "partial_finetune",
+      "dev": {
+        "exact_unique_groups": 181,
+        "exact_accuracy": 0.6022099447513812,
+        "exact_macro_f1": 0.5395274584929758,
+        "exact_conflicting_groups": 0,
+        "accuracy": 0.6022099447513812,
+        "macro_f1": 0.5395274584929758,
+        "labels": [
+          "Active Directory",
+          "Computer-Services",
+          "Fileservice",
+          "O365",
+          "Software",
+          "Support general"
+        ],
+        "confusion_matrix": [
+          [
+            3,
+            0,
+            2,
+            2,
+            0,
+            9
+          ],
+          [
+            2,
+            7,
+            0,
+            1,
+            0,
+            3
+          ],
+          [
+            0,
+            1,
+            28,
+            0,
+            7,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            11,
+            3,
+            10
+          ],
+          [
+            1,
+            1,
+            2,
+            2,
+            13,
+            6
+          ],
+          [
+            2,
+            2,
+            0,
+            4,
+            10,
+            47
+          ]
+        ],
+        "per_class": {
+          "Active Directory": {
+            "precision": 0.375,
+            "recall": 0.1875,
+            "f1-score": 0.25,
+            "support": 16.0
+          },
+          "Computer-Services": {
+            "precision": 0.6363636363636364,
+            "recall": 0.5384615384615384,
+            "f1-score": 0.5833333333333334,
+            "support": 13.0
+          },
+          "Fileservice": {
+            "precision": 0.8484848484848485,
+            "recall": 0.7567567567567568,
+            "f1-score": 0.8,
+            "support": 37.0
+          },
+          "O365": {
+            "precision": 0.55,
+            "recall": 0.44,
+            "f1-score": 0.4888888888888889,
+            "support": 25.0
+          },
+          "Software": {
+            "precision": 0.3939393939393939,
+            "recall": 0.52,
+            "f1-score": 0.4482758620689655,
+            "support": 25.0
+          },
+          "Support general": {
+            "precision": 0.618421052631579,
+            "recall": 0.7230769230769231,
+            "f1-score": 0.6666666666666666,
+            "support": 65.0
+          }
+        },
+        "rows": 181,
+        "unique_groups": 179,
+        "group_accuracy": 0.5977653631284916,
+        "group_macro_f1": 0.5379053984767551,
+        "excluded_conflicting_groups": 0
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 1.662146609132461,
+          "dev_accuracy": 0.5580110497237569,
+          "dev_macro_f1": 0.48762014320659636,
+          "elapsed_seconds": 33.22
+        },
+        {
+          "epoch": 2,
+          "loss": 1.2796992725430272,
+          "dev_accuracy": 0.6022099447513812,
+          "dev_macro_f1": 0.5395274584929758,
+          "elapsed_seconds": 28.32
+        }
+      ]
+    }
+  },
+  "pretrained": {
+    "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "license": "Apache-2.0",
+    "max_length": 96,
+    "training": "Only last transformer layer and classifier trainable; not full encoder finetune"
+  },
+  "sha256": {
+    "train": "c7b6ca4c25a9c2e55c9f92b0f8c43fd014fd1c871c4d1a1b169186a372d1c9f7",
+    "dev": "be8972ce96d0ced7c671bd5f98a09250aa74ed16a4e962ca579ecc60cf6970b6",
+    "tfidf": "6eb7ae8b2731b0b12d65dce807a83ca8dd10301e4d108b3fe7418f1e3c5f60bc",
+    "neural": "99f216cf8e92d38744968759356e897a7df01a0e19a4883794b6d510150f3da9",
+    "pretrained_weights": "eaa086f0ffee582aeb45b36e34cdd1fe2d6de2bef61f8a559a1bbc9bd955917b"
+  }
+}

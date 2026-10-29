@@ -1,0 +1,7 @@
+{
+  "selection_file": "it_selection_v2.json",
+  "selection_sha256": "0a35ace33dfceaac866196d3ba8340995a42fb9875a63fec6f1b6afc642a5da7",
+  "test_sha256": "336f09088802dcd68538e23895e1619d936b14fc342834fb7b124173ef4bb67c",
+  "data_manifest_sha256": "a5fe8a19d7dde063ef51330757ca256e064ed58c94143016bece8b22eeca6b2c",
+  "protocol": "Hashes fixed after dev selection and before test text/labels read for evaluation. Test text was used without labels for near-duplicate removal when preparing data."
+}

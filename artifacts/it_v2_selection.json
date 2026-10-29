@@ -1,0 +1,115 @@
+{
+  "protocol": "Group CV within train, select model and threshold on dev; CLINC train and validation with 21 unrelated intents as proxy OOD; historical IT test not read.",
+  "chosen_model": "balanced",
+  "linear_candidate": "balanced",
+  "classes": [
+    "Active Directory",
+    "Computer-Services",
+    "Fileservice",
+    "O365",
+    "Software",
+    "Support general"
+  ],
+  "candidate_dev": {
+    "balanced": {
+      "cv_macro_f1": [
+        0.7473956868260666,
+        0.6644213916619742,
+        0.7228682291704717
+      ],
+      "dev_accuracy": 0.7182320441988951,
+      "dev_macro_f1": 0.7161779001767451
+    },
+    "regularized": {
+      "cv_macro_f1": [
+        0.7117297409268213,
+        0.5865195859828459,
+        0.6906749122371184
+      ],
+      "dev_accuracy": 0.6353591160220995,
+      "dev_macro_f1": 0.6447719184292074
+    },
+    "unweighted": {
+      "cv_macro_f1": [
+        0.6837614670850799,
+        0.5820908985606984,
+        0.6529904519384534
+      ],
+      "dev_accuracy": 0.6961325966850829,
+      "dev_macro_f1": 0.6470864188122123
+    },
+    "stronger": {
+      "cv_macro_f1": [
+        0.7373049666717649,
+        0.6807959388146525,
+        0.7277880024172219
+      ],
+      "dev_accuracy": 0.7292817679558011,
+      "dev_macro_f1": 0.7145991075983708
+    },
+    "strongest": {
+      "cv_macro_f1": [
+        0.7529137423163611,
+        0.6711450835825543,
+        0.7242809678678673
+      ],
+      "dev_accuracy": 0.7292817679558011,
+      "dev_macro_f1": 0.7120262625148501
+    }
+  },
+  "ood_policy": {
+    "name": "binary",
+    "threshold": 0.54256127035345,
+    "known_n": 181,
+    "unknown_n": 420,
+    "known_rejected": 4,
+    "unknown_detected": 420,
+    "known_reject_rate": 0.022099447513812154,
+    "unknown_recall": 1.0,
+    "coverage": 0.2945091514143095
+  },
+  "ood_policy_candidates": {
+    "confidence": {
+      "threshold": 0.6088890940876279,
+      "known_n": 181,
+      "unknown_n": 420,
+      "known_rejected": 66,
+      "unknown_detected": 411,
+      "known_reject_rate": 0.36464088397790057,
+      "unknown_recall": 0.9785714285714285,
+      "coverage": 0.20632279534109818
+    },
+    "binary": {
+      "threshold": 0.54256127035345,
+      "known_n": 181,
+      "unknown_n": 420,
+      "known_rejected": 4,
+      "unknown_detected": 420,
+      "known_reject_rate": 0.022099447513812154,
+      "unknown_recall": 1.0,
+      "coverage": 0.2945091514143095
+    }
+  },
+  "ood_dev": {
+    "known_n": 181,
+    "unknown_n": 420,
+    "clinc_train_n": 2100
+  },
+  "neural_192": {
+    "status": "not_completed",
+    "reason": "Stopped during model loading to avoid exhausting RAM; no score or candidate produced."
+  },
+  "hashes": {
+    "train": "c7b6ca4c25a9c2e55c9f92b0f8c43fd014fd1c871c4d1a1b169186a372d1c9f7",
+    "dev": "be8972ce96d0ced7c671bd5f98a09250aa74ed16a4e962ca579ecc60cf6970b6",
+    "clinc": "36923c3705a59e08fe9c3883d8bc2dd966ef93e22cb78ac41171782a698d56e0",
+    "topic": "6eb7ae8b2731b0b12d65dce807a83ca8dd10301e4d108b3fe7418f1e3c5f60bc",
+    "detector": "31d5cecd9b176635a9970e7e67080eaa0f90c7b916fff50cbf28e147d2cd3560"
+  },
+  "limitations": [
+    "CLINC unrelated intents are limited proxy OOD, not verified real IT out-of-scope.",
+    "Maximum 40% known rejection on dev is an experimental gate, not production guarantee.",
+    "Old IT test previously viewed and not used for selection.",
+    "Demographic fairness not evaluated."
+  ]
+}

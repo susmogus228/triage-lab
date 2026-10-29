@@ -1,0 +1,155 @@
+{
+  "description": "Post-hoc label sensitivity based on blind reviewer caveats. Alternate labels represent one possible taxonomy interpretation, not established truth. No thresholds, model, or original labels were changed.",
+  "changed_case_count": 18,
+  "baseline": {
+    "total": 100,
+    "known_n": 53,
+    "unknown_n": 19,
+    "ambiguous_n": 28,
+    "known_accuracy": 0.5660377358490566,
+    "known_macro_f1": 0.5435545935545935,
+    "known_rejected": 53,
+    "known_reject_rate": 1.0,
+    "unknown_detected": 19,
+    "unknown_recall": 1.0,
+    "ambiguous_detected": 28,
+    "ambiguous_recall": 1.0,
+    "unsafe_count": 0,
+    "coverage": 0.0,
+    "known_confusion_matrix": [
+      [
+        7,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        1,
+        4
+      ],
+      [
+        1,
+        0,
+        0,
+        7,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        7,
+        2
+      ],
+      [
+        1,
+        0,
+        1,
+        2,
+        0,
+        4
+      ]
+    ],
+    "labels": [
+      "Active Directory",
+      "Computer-Services",
+      "Fileservice",
+      "O365",
+      "Software",
+      "Support general"
+    ]
+  },
+  "candidate": {
+    "total": 100,
+    "known_n": 53,
+    "unknown_n": 19,
+    "ambiguous_n": 28,
+    "known_accuracy": 0.5660377358490566,
+    "known_macro_f1": 0.5435545935545935,
+    "known_rejected": 21,
+    "known_reject_rate": 0.39622641509433965,
+    "unknown_detected": 17,
+    "unknown_recall": 0.8947368421052632,
+    "ambiguous_detected": 21,
+    "ambiguous_recall": 0.75,
+    "unsafe_count": 21,
+    "coverage": 0.41,
+    "known_confusion_matrix": [
+      [
+        7,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        1,
+        4
+      ],
+      [
+        1,
+        0,
+        0,
+        7,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        7,
+        2
+      ],
+      [
+        1,
+        0,
+        1,
+        2,
+        0,
+        4
+      ]
+    ],
+    "labels": [
+      "Active Directory",
+      "Computer-Services",
+      "Fileservice",
+      "O365",
+      "Software",
+      "Support general"
+    ]
+  },
+  "original_report_sha256": "2414daaae57fc279812ef135fc130e6a1e035b26f3d99c4ae9f4d6e986b6b2b2",
+  "selection_sha256": "4a9de91bd2b1e8389ff6de5f9ae43d590e91538b6e2f1cea3acc9b909387f037",
+  "blind_sha256": "01ce1d6aa441b25abc282c61ac51d95d0fc9d3be85403249de14741d7c2c4a92"
+}

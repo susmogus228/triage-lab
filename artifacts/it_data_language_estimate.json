@@ -1,0 +1,40 @@
+{
+  "method": "langdetect 1.0.9, seeded; automated estimates, no ground truth; placeholders and short technical text cause errors; supports English/German/Portuguese/Spanish plus other labels",
+  "counts_by_source_split": {
+    "train": {
+      "languages": {
+        "en": 1350,
+        "fi": 1,
+        "pt": 100,
+        "de": 70,
+        "es": 12,
+        "fr": 7,
+        "it": 8,
+        "ro": 2,
+        "ca": 7,
+        "af": 2,
+        "sl": 1,
+        "nl": 5,
+        "et": 1,
+        "no": 4,
+        "da": 1,
+        "so": 1
+      },
+      "confidence_under_0_8": 64
+    },
+    "test": {
+      "languages": {
+        "en": 590,
+        "de": 22,
+        "pt": 34,
+        "fr": 1,
+        "es": 7,
+        "no": 1,
+        "da": 1,
+        "cy": 1
+      },
+      "confidence_under_0_8": 32
+    }
+  },
+  "short_under_30_chars": 138
+}

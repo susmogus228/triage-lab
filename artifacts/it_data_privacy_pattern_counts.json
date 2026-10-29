@@ -1,0 +1,19 @@
+{
+  "description": "Counts of rows matching simple patterns, not verification of actual private content, no guarantee of complete detection",
+  "counts": {
+    "train": {
+      "email": 0,
+      "url": 0,
+      "ipv4": 0,
+      "phone_like": 82,
+      "deidentification_placeholder": 1347
+    },
+    "test": {
+      "email": 0,
+      "url": 0,
+      "ipv4": 1,
+      "phone_like": 77,
+      "deidentification_placeholder": 633
+    }
+  }
+}

@@ -1,0 +1,653 @@
+{
+  "protocol": "G1 source-ID fit; G2 retrained from scratch using fit + disjoint feedback and weight 3 for feedback prediction errors; dev only selects threshold/generation; holdout not read",
+  "selected": "g1",
+  "threshold": 0.85,
+  "dev_baseline": {
+    "count": 120,
+    "known_n": 88,
+    "known_correct": 63,
+    "known_accuracy": 0.7159090909090909,
+    "review_n": 32,
+    "review_found": 21,
+    "review_recall": 0.65625,
+    "unflagged_n": 49,
+    "coverage": 0.4083333333333333,
+    "unsafe_count": 13,
+    "known_flagged_n": 50,
+    "scenario_counts": {
+      "ambiguous": {
+        "total": 3,
+        "flagged": 3
+      },
+      "multi-intent": {
+        "total": 4,
+        "flagged": 1
+      },
+      "multi_intent": {
+        "total": 8,
+        "flagged": 3
+      },
+      "out_of_scope": {
+        "total": 8,
+        "flagged": 6
+      },
+      "unknown": {
+        "total": 9,
+        "flagged": 8
+      }
+    }
+  },
+  "dev_candidates": [
+    {
+      "name": "g1",
+      "threshold": 0.25,
+      "count": 120,
+      "known_n": 88,
+      "known_correct": 63,
+      "known_accuracy": 0.7159090909090909,
+      "review_n": 32,
+      "review_found": 32,
+      "review_recall": 1.0,
+      "unflagged_n": 7,
+      "coverage": 0.058333333333333334,
+      "unsafe_count": 0,
+      "known_flagged_n": 81,
+      "scenario_counts": {
+        "ambiguous": {
+          "total": 3,
+          "flagged": 3
+        },
+        "multi-intent": {
+          "total": 4,
+          "flagged": 4
+        },
+        "multi_intent": {
+          "total": 8,
+          "flagged": 8
+        },
+        "out_of_scope": {
+          "total": 8,
+          "flagged": 8
+        },
+        "unknown": {
+          "total": 9,
+          "flagged": 9
+        }
+      }
+    },
+    {
+      "name": "g1",
+      "threshold": 0.35,
+      "count": 120,
+      "known_n": 88,
+      "known_correct": 63,
+      "known_accuracy": 0.7159090909090909,
+      "review_n": 32,
+      "review_found": 31,
+      "review_recall": 0.96875,
+      "unflagged_n": 12,
+      "coverage": 0.1,
+      "unsafe_count": 1,
+      "known_flagged_n": 77,
+      "scenario_counts": {
+        "ambiguous": {
+          "total": 3,
+          "flagged": 3
+        },
+        "multi-intent": {
+          "total": 4,
+          "flagged": 4
+        },
+        "multi_intent": {
+          "total": 8,
+          "flagged": 8
+        },
+        "out_of_scope": {
+          "total": 8,
+          "flagged": 7
+        },
+        "unknown": {
+          "total": 9,
+          "flagged": 9
+        }
+      }
+    },
+    {
+      "name": "g1",
+      "threshold": 0.45,
+      "count": 120,
+      "known_n": 88,
+      "known_correct": 63,
+      "known_accuracy": 0.7159090909090909,
+      "review_n": 32,
+      "review_found": 29,
+      "review_recall": 0.90625,
+      "unflagged_n": 17,
+      "coverage": 0.14166666666666666,
+      "unsafe_count": 3,
+      "known_flagged_n": 74,
+      "scenario_counts": {
+        "ambiguous": {
+          "total": 3,
+          "flagged": 3
+        },
+        "multi-intent": {
+          "total": 4,
+          "flagged": 4
+        },
+        "multi_intent": {
+          "total": 8,
+          "flagged": 8
+        },
+        "out_of_scope": {
+          "total": 8,
+          "flagged": 6
+        },
+        "unknown": {
+          "total": 9,
+          "flagged": 8
+        }
+      }
+    },
+    {
+      "name": "g1",
+      "threshold": 0.55,
+      "count": 120,
+      "known_n": 88,
+      "known_correct": 63,
+      "known_accuracy": 0.7159090909090909,
+      "review_n": 32,
+      "review_found": 29,
+      "review_recall": 0.90625,
+      "unflagged_n": 19,
+      "coverage": 0.15833333333333333,
+      "unsafe_count": 3,
+      "known_flagged_n": 72,
+      "scenario_counts": {
+        "ambiguous": {
+          "total": 3,
+          "flagged": 3
+        },
+        "multi-intent": {
+          "total": 4,
+          "flagged": 4
+        },
+        "multi_intent": {
+          "total": 8,
+          "flagged": 8
+        },
+        "out_of_scope": {
+          "total": 8,
+          "flagged": 6
+        },
+        "unknown": {
+          "total": 9,
+          "flagged": 8
+        }
+      }
+    },
+    {
+      "name": "g1",
+      "threshold": 0.65,
+      "count": 120,
+      "known_n": 88,
+      "known_correct": 63,
+      "known_accuracy": 0.7159090909090909,
+      "review_n": 32,
+      "review_found": 29,
+      "review_recall": 0.90625,
+      "unflagged_n": 24,
+      "coverage": 0.2,
+      "unsafe_count": 3,
+      "known_flagged_n": 67,
+      "scenario_counts": {
+        "ambiguous": {
+          "total": 3,
+          "flagged": 3
+        },
+        "multi-intent": {
+          "total": 4,
+          "flagged": 4
+        },
+        "multi_intent": {
+          "total": 8,
+          "flagged": 8
+        },
+        "out_of_scope": {
+          "total": 8,
+          "flagged": 6
+        },
+        "unknown": {
+          "total": 9,
+          "flagged": 8
+        }
+      }
+    },
+    {
+      "name": "g1",
+      "threshold": 0.75,
+      "count": 120,
+      "known_n": 88,
+      "known_correct": 63,
+      "known_accuracy": 0.7159090909090909,
+      "review_n": 32,
+      "review_found": 28,
+      "review_recall": 0.875,
+      "unflagged_n": 29,
+      "coverage": 0.24166666666666667,
+      "unsafe_count": 4,
+      "known_flagged_n": 63,
+      "scenario_counts": {
+        "ambiguous": {
+          "total": 3,
+          "flagged": 3
+        },
+        "multi-intent": {
+          "total": 4,
+          "flagged": 4
+        },
+        "multi_intent": {
+          "total": 8,
+          "flagged": 7
+        },
+        "out_of_scope": {
+          "total": 8,
+          "flagged": 6
+        },
+        "unknown": {
+          "total": 9,
+          "flagged": 8
+        }
+      }
+    },
+    {
+      "name": "g1",
+      "threshold": 0.85,
+      "count": 120,
+      "known_n": 88,
+      "known_correct": 63,
+      "known_accuracy": 0.7159090909090909,
+      "review_n": 32,
+      "review_found": 26,
+      "review_recall": 0.8125,
+      "unflagged_n": 38,
+      "coverage": 0.31666666666666665,
+      "unsafe_count": 7,
+      "known_flagged_n": 56,
+      "scenario_counts": {
+        "ambiguous": {
+          "total": 3,
+          "flagged": 3
+        },
+        "multi-intent": {
+          "total": 4,
+          "flagged": 3
+        },
+        "multi_intent": {
+          "total": 8,
+          "flagged": 6
+        },
+        "out_of_scope": {
+          "total": 8,
+          "flagged": 6
+        },
+        "unknown": {
+          "total": 9,
+          "flagged": 8
+        }
+      }
+    },
+    {
+      "name": "g1",
+      "threshold": 0.95,
+      "count": 120,
+      "known_n": 88,
+      "known_correct": 63,
+      "known_accuracy": 0.7159090909090909,
+      "review_n": 32,
+      "review_found": 24,
+      "review_recall": 0.75,
+      "unflagged_n": 45,
+      "coverage": 0.375,
+      "unsafe_count": 10,
+      "known_flagged_n": 51,
+      "scenario_counts": {
+        "ambiguous": {
+          "total": 3,
+          "flagged": 3
+        },
+        "multi-intent": {
+          "total": 4,
+          "flagged": 1
+        },
+        "multi_intent": {
+          "total": 8,
+          "flagged": 6
+        },
+        "out_of_scope": {
+          "total": 8,
+          "flagged": 6
+        },
+        "unknown": {
+          "total": 9,
+          "flagged": 8
+        }
+      }
+    },
+    {
+      "name": "g2",
+      "threshold": 0.25,
+      "count": 120,
+      "known_n": 88,
+      "known_correct": 63,
+      "known_accuracy": 0.7159090909090909,
+      "review_n": 32,
+      "review_found": 31,
+      "review_recall": 0.96875,
+      "unflagged_n": 8,
+      "coverage": 0.06666666666666667,
+      "unsafe_count": 1,
+      "known_flagged_n": 81,
+      "scenario_counts": {
+        "ambiguous": {
+          "total": 3,
+          "flagged": 3
+        },
+        "multi-intent": {
+          "total": 4,
+          "flagged": 4
+        },
+        "multi_intent": {
+          "total": 8,
+          "flagged": 8
+        },
+        "out_of_scope": {
+          "total": 8,
+          "flagged": 7
+        },
+        "unknown": {
+          "total": 9,
+          "flagged": 9
+        }
+      }
+    },
+    {
+      "name": "g2",
+      "threshold": 0.35,
+      "count": 120,
+      "known_n": 88,
+      "known_correct": 63,
+      "known_accuracy": 0.7159090909090909,
+      "review_n": 32,
+      "review_found": 31,
+      "review_recall": 0.96875,
+      "unflagged_n": 11,
+      "coverage": 0.09166666666666666,
+      "unsafe_count": 1,
+      "known_flagged_n": 78,
+      "scenario_counts": {
+        "ambiguous": {
+          "total": 3,
+          "flagged": 3
+        },
+        "multi-intent": {
+          "total": 4,
+          "flagged": 4
+        },
+        "multi_intent": {
+          "total": 8,
+          "flagged": 8
+        },
+        "out_of_scope": {
+          "total": 8,
+          "flagged": 7
+        },
+        "unknown": {
+          "total": 9,
+          "flagged": 9
+        }
+      }
+    },
+    {
+      "name": "g2",
+      "threshold": 0.45,
+      "count": 120,
+      "known_n": 88,
+      "known_correct": 63,
+      "known_accuracy": 0.7159090909090909,
+      "review_n": 32,
+      "review_found": 30,
+      "review_recall": 0.9375,
+      "unflagged_n": 16,
+      "coverage": 0.13333333333333333,
+      "unsafe_count": 2,
+      "known_flagged_n": 74,
+      "scenario_counts": {
+        "ambiguous": {
+          "total": 3,
+          "flagged": 3
+        },
+        "multi-intent": {
+          "total": 4,
+          "flagged": 4
+        },
+        "multi_intent": {
+          "total": 8,
+          "flagged": 8
+        },
+        "out_of_scope": {
+          "total": 8,
+          "flagged": 7
+        },
+        "unknown": {
+          "total": 9,
+          "flagged": 8
+        }
+      }
+    },
+    {
+      "name": "g2",
+      "threshold": 0.55,
+      "count": 120,
+      "known_n": 88,
+      "known_correct": 63,
+      "known_accuracy": 0.7159090909090909,
+      "review_n": 32,
+      "review_found": 29,
+      "review_recall": 0.90625,
+      "unflagged_n": 19,
+      "coverage": 0.15833333333333333,
+      "unsafe_count": 3,
+      "known_flagged_n": 72,
+      "scenario_counts": {
+        "ambiguous": {
+          "total": 3,
+          "flagged": 3
+        },
+        "multi-intent": {
+          "total": 4,
+          "flagged": 4
+        },
+        "multi_intent": {
+          "total": 8,
+          "flagged": 8
+        },
+        "out_of_scope": {
+          "total": 8,
+          "flagged": 6
+        },
+        "unknown": {
+          "total": 9,
+          "flagged": 8
+        }
+      }
+    },
+    {
+      "name": "g2",
+      "threshold": 0.65,
+      "count": 120,
+      "known_n": 88,
+      "known_correct": 63,
+      "known_accuracy": 0.7159090909090909,
+      "review_n": 32,
+      "review_found": 28,
+      "review_recall": 0.875,
+      "unflagged_n": 21,
+      "coverage": 0.175,
+      "unsafe_count": 4,
+      "known_flagged_n": 71,
+      "scenario_counts": {
+        "ambiguous": {
+          "total": 3,
+          "flagged": 3
+        },
+        "multi-intent": {
+          "total": 4,
+          "flagged": 4
+        },
+        "multi_intent": {
+          "total": 8,
+          "flagged": 7
+        },
+        "out_of_scope": {
+          "total": 8,
+          "flagged": 6
+        },
+        "unknown": {
+          "total": 9,
+          "flagged": 8
+        }
+      }
+    },
+    {
+      "name": "g2",
+      "threshold": 0.75,
+      "count": 120,
+      "known_n": 88,
+      "known_correct": 63,
+      "known_accuracy": 0.7159090909090909,
+      "review_n": 32,
+      "review_found": 27,
+      "review_recall": 0.84375,
+      "unflagged_n": 28,
+      "coverage": 0.23333333333333334,
+      "unsafe_count": 6,
+      "known_flagged_n": 65,
+      "scenario_counts": {
+        "ambiguous": {
+          "total": 3,
+          "flagged": 3
+        },
+        "multi-intent": {
+          "total": 4,
+          "flagged": 3
+        },
+        "multi_intent": {
+          "total": 8,
+          "flagged": 7
+        },
+        "out_of_scope": {
+          "total": 8,
+          "flagged": 6
+        },
+        "unknown": {
+          "total": 9,
+          "flagged": 8
+        }
+      }
+    },
+    {
+      "name": "g2",
+      "threshold": 0.85,
+      "count": 120,
+      "known_n": 88,
+      "known_correct": 63,
+      "known_accuracy": 0.7159090909090909,
+      "review_n": 32,
+      "review_found": 25,
+      "review_recall": 0.78125,
+      "unflagged_n": 37,
+      "coverage": 0.30833333333333335,
+      "unsafe_count": 8,
+      "known_flagged_n": 58,
+      "scenario_counts": {
+        "ambiguous": {
+          "total": 3,
+          "flagged": 3
+        },
+        "multi-intent": {
+          "total": 4,
+          "flagged": 2
+        },
+        "multi_intent": {
+          "total": 8,
+          "flagged": 6
+        },
+        "out_of_scope": {
+          "total": 8,
+          "flagged": 6
+        },
+        "unknown": {
+          "total": 9,
+          "flagged": 8
+        }
+      }
+    },
+    {
+      "name": "g2",
+      "threshold": 0.95,
+      "count": 120,
+      "known_n": 88,
+      "known_correct": 63,
+      "known_accuracy": 0.7159090909090909,
+      "review_n": 32,
+      "review_found": 24,
+      "review_recall": 0.75,
+      "unflagged_n": 45,
+      "coverage": 0.375,
+      "unsafe_count": 10,
+      "known_flagged_n": 51,
+      "scenario_counts": {
+        "ambiguous": {
+          "total": 3,
+          "flagged": 3
+        },
+        "multi-intent": {
+          "total": 4,
+          "flagged": 1
+        },
+        "multi_intent": {
+          "total": 8,
+          "flagged": 6
+        },
+        "out_of_scope": {
+          "total": 8,
+          "flagged": 6
+        },
+        "unknown": {
+          "total": 9,
+          "flagged": 8
+        }
+      }
+    }
+  ],
+  "feedback_error_count": 2324,
+  "feedback_total": 8420,
+  "sample_weights": {
+    "fit": 1.0,
+    "feedback_correct": 1.0,
+    "feedback_incorrect": 3.0
+  },
+  "gate": "At least 2 fewer unflagged errors than baseline; coverage >= max(25%, baseline minus 10 percentage points).",
+  "sha256": {
+    "bitext": "6f81102b0100b97b8468eb04368033a23206bf1fde9d53500d5806ec1001a434",
+    "clinc": "36923c3705a59e08fe9c3883d8bc2dd966ef93e22cb78ac41171782a698d56e0",
+    "fit": "6e4d1b6adab222916b49f9559f55e59c0fbe808b71b85df285e99f4620238c5f",
+    "feedback": "b3ffe463985f4dacd6fc78d62c23770578d91f751daee8f9101c36120a424846",
+    "dev": "266dc1d0a554cb4116631ad1b98ae658dff46a2d0896d50c213c9b5f05692672",
+    "baseline": "4a07b680675a5f6f60be405845bcd77795596fb5f63c70c6fe41c787b2722404",
+    "g1": "f3f51511ad5a9f6b072e420586e3bd7f0a4664f32d155016324cb4a2191596b8",
+    "g2": "d56eca5fb96dafdae19b6c2e10da24d63d089a6e4d2adb79a4a60071effa3f2b"
+  },
+  "created_utc": "2026-10-29T09:37:18.777523+00:00"
+}
